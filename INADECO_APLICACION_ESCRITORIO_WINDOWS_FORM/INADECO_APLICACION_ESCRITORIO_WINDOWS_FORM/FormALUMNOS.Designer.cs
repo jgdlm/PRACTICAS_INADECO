@@ -47,14 +47,14 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.textPROVINCIA = new System.Windows.Forms.TextBox();
             this.labelPROVINCIA = new System.Windows.Forms.Label();
             this.textCODIGO_POSTAL = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelCODIGOPOSTAL = new System.Windows.Forms.Label();
             this.textCIUDAD = new System.Windows.Forms.TextBox();
             this.labelCIUDAD = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textDIRECCION = new System.Windows.Forms.TextBox();
             this.labelDIRECCION = new System.Windows.Forms.Label();
-            this.textDNI = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textDNIALUMNO = new System.Windows.Forms.TextBox();
+            this.labelDNIALUMNO = new System.Windows.Forms.Label();
+            this.textSEGUNDO_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelSEGUNDO_APELLIDO = new System.Windows.Forms.Label();
             this.textNOMBRE = new System.Windows.Forms.TextBox();
             this.labelNOMBRE = new System.Windows.Forms.Label();
@@ -86,14 +86,14 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxALUMNOS.Controls.Add(this.textPROVINCIA);
             this.groupBoxALUMNOS.Controls.Add(this.labelPROVINCIA);
             this.groupBoxALUMNOS.Controls.Add(this.textCODIGO_POSTAL);
-            this.groupBoxALUMNOS.Controls.Add(this.label2);
+            this.groupBoxALUMNOS.Controls.Add(this.labelCODIGOPOSTAL);
             this.groupBoxALUMNOS.Controls.Add(this.textCIUDAD);
             this.groupBoxALUMNOS.Controls.Add(this.labelCIUDAD);
-            this.groupBoxALUMNOS.Controls.Add(this.textBox2);
+            this.groupBoxALUMNOS.Controls.Add(this.textDIRECCION);
             this.groupBoxALUMNOS.Controls.Add(this.labelDIRECCION);
-            this.groupBoxALUMNOS.Controls.Add(this.textDNI);
-            this.groupBoxALUMNOS.Controls.Add(this.label1);
-            this.groupBoxALUMNOS.Controls.Add(this.textBox1);
+            this.groupBoxALUMNOS.Controls.Add(this.textDNIALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.labelDNIALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.textSEGUNDO_APELLIDO);
             this.groupBoxALUMNOS.Controls.Add(this.labelSEGUNDO_APELLIDO);
             this.groupBoxALUMNOS.Controls.Add(this.textNOMBRE);
             this.groupBoxALUMNOS.Controls.Add(this.labelNOMBRE);
@@ -258,15 +258,15 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.textCODIGO_POSTAL.Size = new System.Drawing.Size(111, 20);
             this.textCODIGO_POSTAL.TabIndex = 15;
             // 
-            // label2
+            // labelCODIGOPOSTAL
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(753, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "CODIGO POSTAL";
+            this.labelCODIGOPOSTAL.AutoSize = true;
+            this.labelCODIGOPOSTAL.ForeColor = System.Drawing.Color.Navy;
+            this.labelCODIGOPOSTAL.Location = new System.Drawing.Point(753, 119);
+            this.labelCODIGOPOSTAL.Name = "labelCODIGOPOSTAL";
+            this.labelCODIGOPOSTAL.Size = new System.Drawing.Size(107, 13);
+            this.labelCODIGOPOSTAL.TabIndex = 14;
+            this.labelCODIGOPOSTAL.Text = "CODIGO POSTAL";
             // 
             // textCIUDAD
             // 
@@ -285,12 +285,12 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelCIUDAD.TabIndex = 12;
             this.labelCIUDAD.Text = "CIUDAD";
             // 
-            // textBox2
+            // textDIRECCION
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 112);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(392, 20);
-            this.textBox2.TabIndex = 11;
+            this.textDIRECCION.Location = new System.Drawing.Point(102, 112);
+            this.textDIRECCION.Name = "textDIRECCION";
+            this.textDIRECCION.Size = new System.Drawing.Size(392, 20);
+            this.textDIRECCION.TabIndex = 11;
             // 
             // labelDIRECCION
             // 
@@ -302,29 +302,29 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelDIRECCION.TabIndex = 10;
             this.labelDIRECCION.Text = "DIRECCION";
             // 
-            // textDNI
+            // textDNIALUMNO
             // 
-            this.textDNI.Location = new System.Drawing.Point(997, 72);
-            this.textDNI.Name = "textDNI";
-            this.textDNI.Size = new System.Drawing.Size(161, 20);
-            this.textDNI.TabIndex = 9;
+            this.textDNIALUMNO.Location = new System.Drawing.Point(1053, 72);
+            this.textDNIALUMNO.Name = "textDNIALUMNO";
+            this.textDNIALUMNO.Size = new System.Drawing.Size(161, 20);
+            this.textDNIALUMNO.TabIndex = 9;
             // 
-            // label1
+            // labelDNIALUMNO
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(962, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "DNI";
+            this.labelDNIALUMNO.AutoSize = true;
+            this.labelDNIALUMNO.ForeColor = System.Drawing.Color.Navy;
+            this.labelDNIALUMNO.Location = new System.Drawing.Point(962, 79);
+            this.labelDNIALUMNO.Name = "labelDNIALUMNO";
+            this.labelDNIALUMNO.Size = new System.Drawing.Size(85, 13);
+            this.labelDNIALUMNO.TabIndex = 8;
+            this.labelDNIALUMNO.Text = "DNI ALUMNO";
             // 
-            // textBox1
+            // textSEGUNDO_APELLIDO
             // 
-            this.textBox1.Location = new System.Drawing.Point(766, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 20);
-            this.textBox1.TabIndex = 7;
+            this.textSEGUNDO_APELLIDO.Location = new System.Drawing.Point(766, 72);
+            this.textSEGUNDO_APELLIDO.Name = "textSEGUNDO_APELLIDO";
+            this.textSEGUNDO_APELLIDO.Size = new System.Drawing.Size(177, 20);
+            this.textSEGUNDO_APELLIDO.TabIndex = 7;
             // 
             // labelSEGUNDO_APELLIDO
             // 
@@ -440,14 +440,14 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.TextBox textPROVINCIA;
         private System.Windows.Forms.Label labelPROVINCIA;
         private System.Windows.Forms.TextBox textCODIGO_POSTAL;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelCODIGOPOSTAL;
         private System.Windows.Forms.TextBox textCIUDAD;
         private System.Windows.Forms.Label labelCIUDAD;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textDIRECCION;
         private System.Windows.Forms.Label labelDIRECCION;
-        private System.Windows.Forms.TextBox textDNI;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textDNIALUMNO;
+        private System.Windows.Forms.Label labelDNIALUMNO;
+        private System.Windows.Forms.TextBox textSEGUNDO_APELLIDO;
         private System.Windows.Forms.Label labelSEGUNDO_APELLIDO;
         private System.Windows.Forms.TextBox textNOMBRE;
         private System.Windows.Forms.Label labelNOMBRE;

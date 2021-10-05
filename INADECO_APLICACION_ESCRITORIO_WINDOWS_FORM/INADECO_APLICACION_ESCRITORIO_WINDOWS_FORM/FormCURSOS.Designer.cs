@@ -32,6 +32,12 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCURSOS));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxCURSOS = new System.Windows.Forms.GroupBox();
+            this.textIDAULA = new System.Windows.Forms.TextBox();
+            this.textDNIPROFESOR = new System.Windows.Forms.TextBox();
+            this.labelID_AULA = new System.Windows.Forms.Label();
+            this.labelDNIPROFESOR = new System.Windows.Forms.Label();
+            this.dateTimePickerFECHAFINALIZACION = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFECHAINICIO = new System.Windows.Forms.DateTimePicker();
             this.labelTABLADATOSCURSOS = new System.Windows.Forms.Label();
             this.GRIDDATOSCURSOS = new System.Windows.Forms.DataGridView();
             this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
@@ -41,8 +47,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnMODIFICACURSO = new System.Windows.Forms.Button();
             this.btnBAJACURSO = new System.Windows.Forms.Button();
             this.btnALTACURSO = new System.Windows.Forms.Button();
-            this.textIDALUMNO = new System.Windows.Forms.TextBox();
-            this.labelID_ALUMNO = new System.Windows.Forms.Label();
+            this.textDNIALUMNO = new System.Windows.Forms.TextBox();
+            this.labelIDNIALUMNO = new System.Windows.Forms.Label();
             this.textHORARIO = new System.Windows.Forms.TextBox();
             this.labelHORARIO = new System.Windows.Forms.Label();
             this.labelFECHAFINALIZACION = new System.Windows.Forms.Label();
@@ -51,12 +57,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelFECHAINICIO = new System.Windows.Forms.Label();
             this.textID_ALUMNO = new System.Windows.Forms.TextBox();
             this.labelID_CURSO = new System.Windows.Forms.Label();
-            this.dateTimePickerFECHAINICIO = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerFECHAFINALIZACION = new System.Windows.Forms.DateTimePicker();
-            this.labelID_PROFESOR = new System.Windows.Forms.Label();
-            this.labelID_AULA = new System.Windows.Forms.Label();
-            this.textIDPROFESOR = new System.Windows.Forms.TextBox();
-            this.textIDAULA = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxCURSOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSCURSOS)).BeginInit();
@@ -75,9 +75,9 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // groupBoxCURSOS
             // 
             this.groupBoxCURSOS.Controls.Add(this.textIDAULA);
-            this.groupBoxCURSOS.Controls.Add(this.textIDPROFESOR);
+            this.groupBoxCURSOS.Controls.Add(this.textDNIPROFESOR);
             this.groupBoxCURSOS.Controls.Add(this.labelID_AULA);
-            this.groupBoxCURSOS.Controls.Add(this.labelID_PROFESOR);
+            this.groupBoxCURSOS.Controls.Add(this.labelDNIPROFESOR);
             this.groupBoxCURSOS.Controls.Add(this.dateTimePickerFECHAFINALIZACION);
             this.groupBoxCURSOS.Controls.Add(this.dateTimePickerFECHAINICIO);
             this.groupBoxCURSOS.Controls.Add(this.labelTABLADATOSCURSOS);
@@ -89,8 +89,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxCURSOS.Controls.Add(this.btnMODIFICACURSO);
             this.groupBoxCURSOS.Controls.Add(this.btnBAJACURSO);
             this.groupBoxCURSOS.Controls.Add(this.btnALTACURSO);
-            this.groupBoxCURSOS.Controls.Add(this.textIDALUMNO);
-            this.groupBoxCURSOS.Controls.Add(this.labelID_ALUMNO);
+            this.groupBoxCURSOS.Controls.Add(this.textDNIALUMNO);
+            this.groupBoxCURSOS.Controls.Add(this.labelIDNIALUMNO);
             this.groupBoxCURSOS.Controls.Add(this.textHORARIO);
             this.groupBoxCURSOS.Controls.Add(this.labelHORARIO);
             this.groupBoxCURSOS.Controls.Add(this.labelFECHAFINALIZACION);
@@ -106,6 +106,54 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxCURSOS.TabIndex = 5;
             this.groupBoxCURSOS.TabStop = false;
             this.groupBoxCURSOS.Text = "CURSOS";
+            // 
+            // textIDAULA
+            // 
+            this.textIDAULA.Location = new System.Drawing.Point(663, 152);
+            this.textIDAULA.Name = "textIDAULA";
+            this.textIDAULA.Size = new System.Drawing.Size(182, 20);
+            this.textIDAULA.TabIndex = 36;
+            // 
+            // textDNIPROFESOR
+            // 
+            this.textDNIPROFESOR.Location = new System.Drawing.Point(406, 149);
+            this.textDNIPROFESOR.Name = "textDNIPROFESOR";
+            this.textDNIPROFESOR.Size = new System.Drawing.Size(182, 20);
+            this.textDNIPROFESOR.TabIndex = 35;
+            // 
+            // labelID_AULA
+            // 
+            this.labelID_AULA.AutoSize = true;
+            this.labelID_AULA.ForeColor = System.Drawing.Color.Navy;
+            this.labelID_AULA.Location = new System.Drawing.Point(598, 156);
+            this.labelID_AULA.Name = "labelID_AULA";
+            this.labelID_AULA.Size = new System.Drawing.Size(59, 13);
+            this.labelID_AULA.TabIndex = 34;
+            this.labelID_AULA.Text = "ID_AULA";
+            // 
+            // labelDNIPROFESOR
+            // 
+            this.labelDNIPROFESOR.AutoSize = true;
+            this.labelDNIPROFESOR.ForeColor = System.Drawing.Color.Navy;
+            this.labelDNIPROFESOR.Location = new System.Drawing.Point(300, 152);
+            this.labelDNIPROFESOR.Name = "labelDNIPROFESOR";
+            this.labelDNIPROFESOR.Size = new System.Drawing.Size(100, 13);
+            this.labelDNIPROFESOR.TabIndex = 33;
+            this.labelDNIPROFESOR.Text = "DNI PROFESOR";
+            // 
+            // dateTimePickerFECHAFINALIZACION
+            // 
+            this.dateTimePickerFECHAFINALIZACION.Location = new System.Drawing.Point(512, 116);
+            this.dateTimePickerFECHAFINALIZACION.Name = "dateTimePickerFECHAFINALIZACION";
+            this.dateTimePickerFECHAFINALIZACION.Size = new System.Drawing.Size(235, 20);
+            this.dateTimePickerFECHAFINALIZACION.TabIndex = 32;
+            // 
+            // dateTimePickerFECHAINICIO
+            // 
+            this.dateTimePickerFECHAINICIO.Location = new System.Drawing.Point(115, 112);
+            this.dateTimePickerFECHAINICIO.Name = "dateTimePickerFECHAINICIO";
+            this.dateTimePickerFECHAINICIO.Size = new System.Drawing.Size(235, 20);
+            this.dateTimePickerFECHAINICIO.TabIndex = 31;
             // 
             // labelTABLADATOSCURSOS
             // 
@@ -198,22 +246,22 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnALTACURSO.Text = "DAR ALTA CURSO";
             this.btnALTACURSO.UseVisualStyleBackColor = false;
             // 
-            // textIDALUMNO
+            // textDNIALUMNO
             // 
-            this.textIDALUMNO.Location = new System.Drawing.Point(102, 145);
-            this.textIDALUMNO.Name = "textIDALUMNO";
-            this.textIDALUMNO.Size = new System.Drawing.Size(182, 20);
-            this.textIDALUMNO.TabIndex = 19;
+            this.textDNIALUMNO.Location = new System.Drawing.Point(111, 145);
+            this.textDNIALUMNO.Name = "textDNIALUMNO";
+            this.textDNIALUMNO.Size = new System.Drawing.Size(182, 20);
+            this.textDNIALUMNO.TabIndex = 19;
             // 
-            // labelID_ALUMNO
+            // labelIDNIALUMNO
             // 
-            this.labelID_ALUMNO.AutoSize = true;
-            this.labelID_ALUMNO.ForeColor = System.Drawing.Color.Navy;
-            this.labelID_ALUMNO.Location = new System.Drawing.Point(20, 152);
-            this.labelID_ALUMNO.Name = "labelID_ALUMNO";
-            this.labelID_ALUMNO.Size = new System.Drawing.Size(79, 13);
-            this.labelID_ALUMNO.TabIndex = 18;
-            this.labelID_ALUMNO.Text = "ID_ALUMNO";
+            this.labelIDNIALUMNO.AutoSize = true;
+            this.labelIDNIALUMNO.ForeColor = System.Drawing.Color.Navy;
+            this.labelIDNIALUMNO.Location = new System.Drawing.Point(20, 152);
+            this.labelIDNIALUMNO.Name = "labelIDNIALUMNO";
+            this.labelIDNIALUMNO.Size = new System.Drawing.Size(85, 13);
+            this.labelIDNIALUMNO.TabIndex = 18;
+            this.labelIDNIALUMNO.Text = "DNI ALUMNO";
             // 
             // textHORARIO
             // 
@@ -286,54 +334,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelID_CURSO.TabIndex = 0;
             this.labelID_CURSO.Text = "ID_CURSO";
             // 
-            // dateTimePickerFECHAINICIO
-            // 
-            this.dateTimePickerFECHAINICIO.Location = new System.Drawing.Point(115, 112);
-            this.dateTimePickerFECHAINICIO.Name = "dateTimePickerFECHAINICIO";
-            this.dateTimePickerFECHAINICIO.Size = new System.Drawing.Size(235, 20);
-            this.dateTimePickerFECHAINICIO.TabIndex = 31;
-            // 
-            // dateTimePickerFECHAFINALIZACION
-            // 
-            this.dateTimePickerFECHAFINALIZACION.Location = new System.Drawing.Point(512, 116);
-            this.dateTimePickerFECHAFINALIZACION.Name = "dateTimePickerFECHAFINALIZACION";
-            this.dateTimePickerFECHAFINALIZACION.Size = new System.Drawing.Size(235, 20);
-            this.dateTimePickerFECHAFINALIZACION.TabIndex = 32;
-            // 
-            // labelID_PROFESOR
-            // 
-            this.labelID_PROFESOR.AutoSize = true;
-            this.labelID_PROFESOR.ForeColor = System.Drawing.Color.Navy;
-            this.labelID_PROFESOR.Location = new System.Drawing.Point(300, 152);
-            this.labelID_PROFESOR.Name = "labelID_PROFESOR";
-            this.labelID_PROFESOR.Size = new System.Drawing.Size(94, 13);
-            this.labelID_PROFESOR.TabIndex = 33;
-            this.labelID_PROFESOR.Text = "ID_PROFESOR";
-            // 
-            // labelID_AULA
-            // 
-            this.labelID_AULA.AutoSize = true;
-            this.labelID_AULA.ForeColor = System.Drawing.Color.Navy;
-            this.labelID_AULA.Location = new System.Drawing.Point(598, 156);
-            this.labelID_AULA.Name = "labelID_AULA";
-            this.labelID_AULA.Size = new System.Drawing.Size(59, 13);
-            this.labelID_AULA.TabIndex = 34;
-            this.labelID_AULA.Text = "ID_AULA";
-            // 
-            // textIDPROFESOR
-            // 
-            this.textIDPROFESOR.Location = new System.Drawing.Point(400, 149);
-            this.textIDPROFESOR.Name = "textIDPROFESOR";
-            this.textIDPROFESOR.Size = new System.Drawing.Size(182, 20);
-            this.textIDPROFESOR.TabIndex = 35;
-            // 
-            // textIDAULA
-            // 
-            this.textIDAULA.Location = new System.Drawing.Point(663, 152);
-            this.textIDAULA.Name = "textIDAULA";
-            this.textIDAULA.Size = new System.Drawing.Size(182, 20);
-            this.textIDAULA.TabIndex = 36;
-            // 
             // FrmCURSOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -368,8 +368,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Button btnMODIFICACURSO;
         private System.Windows.Forms.Button btnBAJACURSO;
         private System.Windows.Forms.Button btnALTACURSO;
-        private System.Windows.Forms.TextBox textIDALUMNO;
-        private System.Windows.Forms.Label labelID_ALUMNO;
+        private System.Windows.Forms.TextBox textDNIALUMNO;
+        private System.Windows.Forms.Label labelIDNIALUMNO;
         private System.Windows.Forms.TextBox textHORARIO;
         private System.Windows.Forms.Label labelHORARIO;
         private System.Windows.Forms.Label labelFECHAFINALIZACION;
@@ -380,9 +380,9 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelID_CURSO;
         private System.Windows.Forms.DateTimePicker dateTimePickerFECHAINICIO;
         private System.Windows.Forms.DateTimePicker dateTimePickerFECHAFINALIZACION;
-        private System.Windows.Forms.Label labelID_PROFESOR;
+        private System.Windows.Forms.Label labelDNIPROFESOR;
         private System.Windows.Forms.Label labelID_AULA;
         private System.Windows.Forms.TextBox textIDAULA;
-        private System.Windows.Forms.TextBox textIDPROFESOR;
+        private System.Windows.Forms.TextBox textDNIPROFESOR;
     }
 }
