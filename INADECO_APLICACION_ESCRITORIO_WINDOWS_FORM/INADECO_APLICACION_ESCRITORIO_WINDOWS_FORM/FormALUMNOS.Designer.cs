@@ -1,17 +1,17 @@
 ﻿
 namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 {
-    partial class Form1
+    partial class FrmALUMNOS
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,17 +21,17 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmALUMNOS));
+            this.groupBoxALUMNOS = new System.Windows.Forms.GroupBox();
+            this.labelTABLADATOSALUMNOS = new System.Windows.Forms.Label();
             this.GRIDDATOSALUMNOS = new System.Windows.Forms.DataGridView();
             this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
             this.btnBUSCARALUMNO = new System.Windows.Forms.Button();
@@ -62,69 +62,70 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelPRIMER_APELLIDO = new System.Windows.Forms.Label();
             this.textID_ALUMNO = new System.Windows.Forms.TextBox();
             this.labelID_ALUMNO = new System.Windows.Forms.Label();
-            this.labelTABLADATOSALUMNOS = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBoxALUMNOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSALUMNOS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // groupBoxALUMNOS
             // 
-            this.pictureBox1.Image = global::INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties.Resources.INADECO_22;
-            this.pictureBox1.Location = new System.Drawing.Point(311, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(401, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.groupBoxALUMNOS.Controls.Add(this.labelTABLADATOSALUMNOS);
+            this.groupBoxALUMNOS.Controls.Add(this.GRIDDATOSALUMNOS);
+            this.groupBoxALUMNOS.Controls.Add(this.btnREFRESCARCAMPOSALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.btnBUSCARALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.textBUSCARALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.labelBUSCARALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.btnMODIFICAALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.btnBAJAALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.btnALTAALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.textEMAIL);
+            this.groupBoxALUMNOS.Controls.Add(this.labeLEMAIL);
+            this.groupBoxALUMNOS.Controls.Add(this.textTELEFONO);
+            this.groupBoxALUMNOS.Controls.Add(this.labelTELEFONO);
+            this.groupBoxALUMNOS.Controls.Add(this.textPROVINCIA);
+            this.groupBoxALUMNOS.Controls.Add(this.labelPROVINCIA);
+            this.groupBoxALUMNOS.Controls.Add(this.textCODIGO_POSTAL);
+            this.groupBoxALUMNOS.Controls.Add(this.label2);
+            this.groupBoxALUMNOS.Controls.Add(this.textCIUDAD);
+            this.groupBoxALUMNOS.Controls.Add(this.labelCIUDAD);
+            this.groupBoxALUMNOS.Controls.Add(this.textBox2);
+            this.groupBoxALUMNOS.Controls.Add(this.labelDIRECCION);
+            this.groupBoxALUMNOS.Controls.Add(this.textDNI);
+            this.groupBoxALUMNOS.Controls.Add(this.label1);
+            this.groupBoxALUMNOS.Controls.Add(this.textBox1);
+            this.groupBoxALUMNOS.Controls.Add(this.labelSEGUNDO_APELLIDO);
+            this.groupBoxALUMNOS.Controls.Add(this.textNOMBRE);
+            this.groupBoxALUMNOS.Controls.Add(this.labelNOMBRE);
+            this.groupBoxALUMNOS.Controls.Add(this.textPRIMER_APELLIDO);
+            this.groupBoxALUMNOS.Controls.Add(this.labelPRIMER_APELLIDO);
+            this.groupBoxALUMNOS.Controls.Add(this.textID_ALUMNO);
+            this.groupBoxALUMNOS.Controls.Add(this.labelID_ALUMNO);
+            this.groupBoxALUMNOS.ForeColor = System.Drawing.Color.Navy;
+            this.groupBoxALUMNOS.Location = new System.Drawing.Point(12, 144);
+            this.groupBoxALUMNOS.Name = "groupBoxALUMNOS";
+            this.groupBoxALUMNOS.Size = new System.Drawing.Size(1346, 584);
+            this.groupBoxALUMNOS.TabIndex = 3;
+            this.groupBoxALUMNOS.TabStop = false;
+            this.groupBoxALUMNOS.Text = "ALUMNOS";
             // 
-            // groupBox1
+            // labelTABLADATOSALUMNOS
             // 
-            this.groupBox1.Controls.Add(this.labelTABLADATOSALUMNOS);
-            this.groupBox1.Controls.Add(this.GRIDDATOSALUMNOS);
-            this.groupBox1.Controls.Add(this.btnREFRESCARCAMPOSALUMNO);
-            this.groupBox1.Controls.Add(this.btnBUSCARALUMNO);
-            this.groupBox1.Controls.Add(this.textBUSCARALUMNO);
-            this.groupBox1.Controls.Add(this.labelBUSCARALUMNO);
-            this.groupBox1.Controls.Add(this.btnMODIFICAALUMNO);
-            this.groupBox1.Controls.Add(this.btnBAJAALUMNO);
-            this.groupBox1.Controls.Add(this.btnALTAALUMNO);
-            this.groupBox1.Controls.Add(this.textEMAIL);
-            this.groupBox1.Controls.Add(this.labeLEMAIL);
-            this.groupBox1.Controls.Add(this.textTELEFONO);
-            this.groupBox1.Controls.Add(this.labelTELEFONO);
-            this.groupBox1.Controls.Add(this.textPROVINCIA);
-            this.groupBox1.Controls.Add(this.labelPROVINCIA);
-            this.groupBox1.Controls.Add(this.textCODIGO_POSTAL);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textCIUDAD);
-            this.groupBox1.Controls.Add(this.labelCIUDAD);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.labelDIRECCION);
-            this.groupBox1.Controls.Add(this.textDNI);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.labelSEGUNDO_APELLIDO);
-            this.groupBox1.Controls.Add(this.textNOMBRE);
-            this.groupBox1.Controls.Add(this.labelNOMBRE);
-            this.groupBox1.Controls.Add(this.textPRIMER_APELLIDO);
-            this.groupBox1.Controls.Add(this.labelPRIMER_APELLIDO);
-            this.groupBox1.Controls.Add(this.textID_ALUMNO);
-            this.groupBox1.Controls.Add(this.labelID_ALUMNO);
-            this.groupBox1.ForeColor = System.Drawing.Color.Navy;
-            this.groupBox1.Location = new System.Drawing.Point(12, 153);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1096, 584);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ALUMNOS";
+            this.labelTABLADATOSALUMNOS.AutoSize = true;
+            this.labelTABLADATOSALUMNOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTABLADATOSALUMNOS.ForeColor = System.Drawing.Color.Navy;
+            this.labelTABLADATOSALUMNOS.Location = new System.Drawing.Point(16, 264);
+            this.labelTABLADATOSALUMNOS.Name = "labelTABLADATOSALUMNOS";
+            this.labelTABLADATOSALUMNOS.Size = new System.Drawing.Size(193, 16);
+            this.labelTABLADATOSALUMNOS.TabIndex = 30;
+            this.labelTABLADATOSALUMNOS.Text = "TABLA DATOS ALUMNOS:";
             // 
             // GRIDDATOSALUMNOS
             // 
             this.GRIDDATOSALUMNOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDDATOSALUMNOS.Location = new System.Drawing.Point(19, 288);
+            this.GRIDDATOSALUMNOS.Location = new System.Drawing.Point(19, 283);
             this.GRIDDATOSALUMNOS.Name = "GRIDDATOSALUMNOS";
-            this.GRIDDATOSALUMNOS.Size = new System.Drawing.Size(1061, 276);
+            this.GRIDDATOSALUMNOS.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSALUMNOS.TabIndex = 29;
             // 
             // btnREFRESCARCAMPOSALUMNO
@@ -142,16 +143,16 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.btnBUSCARALUMNO.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnBUSCARALUMNO.ForeColor = System.Drawing.Color.White;
-            this.btnBUSCARALUMNO.Location = new System.Drawing.Point(994, 197);
+            this.btnBUSCARALUMNO.Location = new System.Drawing.Point(1151, 188);
             this.btnBUSCARALUMNO.Name = "btnBUSCARALUMNO";
-            this.btnBUSCARALUMNO.Size = new System.Drawing.Size(86, 40);
+            this.btnBUSCARALUMNO.Size = new System.Drawing.Size(145, 40);
             this.btnBUSCARALUMNO.TabIndex = 27;
             this.btnBUSCARALUMNO.Text = "BUSCAR ALUMNO";
             this.btnBUSCARALUMNO.UseVisualStyleBackColor = false;
             // 
             // textBUSCARALUMNO
             // 
-            this.textBUSCARALUMNO.Location = new System.Drawing.Point(806, 208);
+            this.textBUSCARALUMNO.Location = new System.Drawing.Point(963, 208);
             this.textBUSCARALUMNO.Name = "textBUSCARALUMNO";
             this.textBUSCARALUMNO.Size = new System.Drawing.Size(182, 20);
             this.textBUSCARALUMNO.TabIndex = 26;
@@ -160,7 +161,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labelBUSCARALUMNO.AutoSize = true;
             this.labelBUSCARALUMNO.ForeColor = System.Drawing.Color.Navy;
-            this.labelBUSCARALUMNO.Location = new System.Drawing.Point(540, 215);
+            this.labelBUSCARALUMNO.Location = new System.Drawing.Point(697, 215);
             this.labelBUSCARALUMNO.Name = "labelBUSCARALUMNO";
             this.labelBUSCARALUMNO.Size = new System.Drawing.Size(260, 13);
             this.labelBUSCARALUMNO.TabIndex = 25;
@@ -201,7 +202,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textEMAIL
             // 
-            this.textEMAIL.Location = new System.Drawing.Point(816, 145);
+            this.textEMAIL.Location = new System.Drawing.Point(346, 149);
             this.textEMAIL.Name = "textEMAIL";
             this.textEMAIL.Size = new System.Drawing.Size(236, 20);
             this.textEMAIL.TabIndex = 21;
@@ -210,7 +211,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labeLEMAIL.AutoSize = true;
             this.labeLEMAIL.ForeColor = System.Drawing.Color.Navy;
-            this.labeLEMAIL.Location = new System.Drawing.Point(766, 151);
+            this.labeLEMAIL.Location = new System.Drawing.Point(296, 152);
             this.labeLEMAIL.Name = "labeLEMAIL";
             this.labeLEMAIL.Size = new System.Drawing.Size(44, 13);
             this.labeLEMAIL.TabIndex = 20;
@@ -218,7 +219,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textTELEFONO
             // 
-            this.textTELEFONO.Location = new System.Drawing.Point(578, 144);
+            this.textTELEFONO.Location = new System.Drawing.Point(102, 145);
             this.textTELEFONO.Name = "textTELEFONO";
             this.textTELEFONO.Size = new System.Drawing.Size(182, 20);
             this.textTELEFONO.TabIndex = 19;
@@ -227,7 +228,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labelTELEFONO.AutoSize = true;
             this.labelTELEFONO.ForeColor = System.Drawing.Color.Navy;
-            this.labelTELEFONO.Location = new System.Drawing.Point(500, 151);
+            this.labelTELEFONO.Location = new System.Drawing.Point(23, 152);
             this.labelTELEFONO.Name = "labelTELEFONO";
             this.labelTELEFONO.Size = new System.Drawing.Size(72, 13);
             this.labelTELEFONO.TabIndex = 18;
@@ -235,7 +236,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textPROVINCIA
             // 
-            this.textPROVINCIA.Location = new System.Drawing.Point(329, 148);
+            this.textPROVINCIA.Location = new System.Drawing.Point(1063, 116);
             this.textPROVINCIA.Name = "textPROVINCIA";
             this.textPROVINCIA.Size = new System.Drawing.Size(165, 20);
             this.textPROVINCIA.TabIndex = 17;
@@ -244,7 +245,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labelPROVINCIA.AutoSize = true;
             this.labelPROVINCIA.ForeColor = System.Drawing.Color.Navy;
-            this.labelPROVINCIA.Location = new System.Drawing.Point(249, 148);
+            this.labelPROVINCIA.Location = new System.Drawing.Point(983, 119);
             this.labelPROVINCIA.Name = "labelPROVINCIA";
             this.labelPROVINCIA.Size = new System.Drawing.Size(74, 13);
             this.labelPROVINCIA.TabIndex = 16;
@@ -252,7 +253,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textCODIGO_POSTAL
             // 
-            this.textCODIGO_POSTAL.Location = new System.Drawing.Point(129, 145);
+            this.textCODIGO_POSTAL.Location = new System.Drawing.Point(866, 112);
             this.textCODIGO_POSTAL.Name = "textCODIGO_POSTAL";
             this.textCODIGO_POSTAL.Size = new System.Drawing.Size(111, 20);
             this.textCODIGO_POSTAL.TabIndex = 15;
@@ -261,7 +262,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(16, 151);
+            this.label2.Location = new System.Drawing.Point(753, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 14;
@@ -269,7 +270,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textCIUDAD
             // 
-            this.textCIUDAD.Location = new System.Drawing.Point(766, 112);
+            this.textCIUDAD.Location = new System.Drawing.Point(560, 112);
             this.textCIUDAD.Name = "textCIUDAD";
             this.textCIUDAD.Size = new System.Drawing.Size(177, 20);
             this.textCIUDAD.TabIndex = 13;
@@ -278,7 +279,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labelCIUDAD.AutoSize = true;
             this.labelCIUDAD.ForeColor = System.Drawing.Color.Navy;
-            this.labelCIUDAD.Location = new System.Drawing.Point(706, 115);
+            this.labelCIUDAD.Location = new System.Drawing.Point(500, 115);
             this.labelCIUDAD.Name = "labelCIUDAD";
             this.labelCIUDAD.Size = new System.Drawing.Size(54, 13);
             this.labelCIUDAD.TabIndex = 12;
@@ -286,7 +287,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(308, 108);
+            this.textBox2.Location = new System.Drawing.Point(102, 112);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(392, 20);
             this.textBox2.TabIndex = 11;
@@ -295,7 +296,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labelDIRECCION.AutoSize = true;
             this.labelDIRECCION.ForeColor = System.Drawing.Color.Navy;
-            this.labelDIRECCION.Location = new System.Drawing.Point(227, 112);
+            this.labelDIRECCION.Location = new System.Drawing.Point(20, 115);
             this.labelDIRECCION.Name = "labelDIRECCION";
             this.labelDIRECCION.Size = new System.Drawing.Size(75, 13);
             this.labelDIRECCION.TabIndex = 10;
@@ -303,7 +304,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textDNI
             // 
-            this.textDNI.Location = new System.Drawing.Point(48, 108);
+            this.textDNI.Location = new System.Drawing.Point(997, 72);
             this.textDNI.Name = "textDNI";
             this.textDNI.Size = new System.Drawing.Size(161, 20);
             this.textDNI.TabIndex = 9;
@@ -312,7 +313,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(16, 111);
+            this.label1.Location = new System.Drawing.Point(962, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 8;
@@ -371,6 +372,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textID_ALUMNO
             // 
+            this.textID_ALUMNO.Enabled = false;
             this.textID_ALUMNO.Location = new System.Drawing.Point(101, 30);
             this.textID_ALUMNO.Name = "textID_ALUMNO";
             this.textID_ALUMNO.Size = new System.Drawing.Size(201, 20);
@@ -386,35 +388,34 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelID_ALUMNO.TabIndex = 0;
             this.labelID_ALUMNO.Text = "ID_ALUMNO";
             // 
-            // labelTABLADATOSALUMNOS
+            // pictureBox1
             // 
-            this.labelTABLADATOSALUMNOS.AutoSize = true;
-            this.labelTABLADATOSALUMNOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTABLADATOSALUMNOS.ForeColor = System.Drawing.Color.Navy;
-            this.labelTABLADATOSALUMNOS.Location = new System.Drawing.Point(16, 269);
-            this.labelTABLADATOSALUMNOS.Name = "labelTABLADATOSALUMNOS";
-            this.labelTABLADATOSALUMNOS.Size = new System.Drawing.Size(211, 16);
-            this.labelTABLADATOSALUMNOS.TabIndex = 30;
-            this.labelTABLADATOSALUMNOS.Text = "TABLA DATOS ALUMNOS:";
+            this.pictureBox1.Image = global::INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties.Resources.INADECO_22;
+            this.pictureBox1.Location = new System.Drawing.Point(402, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(401, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // FrmALUMNOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1131, 749);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.groupBoxALUMNOS);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Navy;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "INADECO GESTION";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Name = "FrmALUMNOS";
+            this.Text = "ALUMNOS";
+            this.groupBoxALUMNOS.ResumeLayout(false);
+            this.groupBoxALUMNOS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSALUMNOS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,38 +423,37 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textID_ALUMNO;
-        private System.Windows.Forms.Label labelID_ALUMNO;
-        private System.Windows.Forms.Label labelPRIMER_APELLIDO;
-        private System.Windows.Forms.TextBox textPRIMER_APELLIDO;
-        private System.Windows.Forms.Label labelNOMBRE;
-        private System.Windows.Forms.TextBox textNOMBRE;
-        private System.Windows.Forms.Label labelSEGUNDO_APELLIDO;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textDNI;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label labelDIRECCION;
-        private System.Windows.Forms.Label labelCIUDAD;
-        private System.Windows.Forms.TextBox textCIUDAD;
+        private System.Windows.Forms.GroupBox groupBoxALUMNOS;
+        private System.Windows.Forms.Label labelTABLADATOSALUMNOS;
+        private System.Windows.Forms.DataGridView GRIDDATOSALUMNOS;
+        private System.Windows.Forms.Button btnREFRESCARCAMPOSALUMNO;
+        private System.Windows.Forms.Button btnBUSCARALUMNO;
+        private System.Windows.Forms.TextBox textBUSCARALUMNO;
+        private System.Windows.Forms.Label labelBUSCARALUMNO;
+        private System.Windows.Forms.Button btnMODIFICAALUMNO;
+        private System.Windows.Forms.Button btnBAJAALUMNO;
+        private System.Windows.Forms.Button btnALTAALUMNO;
+        private System.Windows.Forms.TextBox textEMAIL;
+        private System.Windows.Forms.Label labeLEMAIL;
+        private System.Windows.Forms.TextBox textTELEFONO;
+        private System.Windows.Forms.Label labelTELEFONO;
+        private System.Windows.Forms.TextBox textPROVINCIA;
+        private System.Windows.Forms.Label labelPROVINCIA;
         private System.Windows.Forms.TextBox textCODIGO_POSTAL;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelPROVINCIA;
-        private System.Windows.Forms.TextBox textPROVINCIA;
-        private System.Windows.Forms.Label labelTELEFONO;
-        private System.Windows.Forms.TextBox textTELEFONO;
-        private System.Windows.Forms.Label labeLEMAIL;
-        private System.Windows.Forms.TextBox textEMAIL;
-        private System.Windows.Forms.Button btnALTAALUMNO;
-        private System.Windows.Forms.Button btnBAJAALUMNO;
-        private System.Windows.Forms.Button btnMODIFICAALUMNO;
-        private System.Windows.Forms.Label labelBUSCARALUMNO;
-        private System.Windows.Forms.TextBox textBUSCARALUMNO;
-        private System.Windows.Forms.Button btnBUSCARALUMNO;
-        private System.Windows.Forms.Button btnREFRESCARCAMPOSALUMNO;
-        private System.Windows.Forms.DataGridView GRIDDATOSALUMNOS;
-        private System.Windows.Forms.Label labelTABLADATOSALUMNOS;
+        private System.Windows.Forms.TextBox textCIUDAD;
+        private System.Windows.Forms.Label labelCIUDAD;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelDIRECCION;
+        private System.Windows.Forms.TextBox textDNI;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelSEGUNDO_APELLIDO;
+        private System.Windows.Forms.TextBox textNOMBRE;
+        private System.Windows.Forms.Label labelNOMBRE;
+        private System.Windows.Forms.TextBox textPRIMER_APELLIDO;
+        private System.Windows.Forms.Label labelPRIMER_APELLIDO;
+        private System.Windows.Forms.TextBox textID_ALUMNO;
+        private System.Windows.Forms.Label labelID_ALUMNO;
     }
 }
-

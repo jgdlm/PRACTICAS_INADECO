@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormALUMNOS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormALUMNOS.Designer.cs">
+      <DependentUpon>FormALUMNOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCURSOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCURSOS.Designer.cs">
+      <DependentUpon>FormCURSOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormINICIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormINICIO.Designer.cs">
+      <DependentUpon>FormINICIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPROFESORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPROFESORES.Designer.cs">
+      <DependentUpon>FormPROFESORES.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormALUMNOS.resx">
+      <DependentUpon>FormALUMNOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCURSOS.resx">
+      <DependentUpon>FormCURSOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormINICIO.resx">
+      <DependentUpon>FormINICIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPROFESORES.resx">
+      <DependentUpon>FormPROFESORES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

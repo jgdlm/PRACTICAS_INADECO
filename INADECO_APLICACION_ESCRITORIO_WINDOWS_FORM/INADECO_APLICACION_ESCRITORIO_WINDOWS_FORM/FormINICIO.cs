@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 {
-    public partial class Form1 : Form
+    public partial class FrmINICIO : Form
     {
-        public Form1()
+        public FrmINICIO()
         {
             InitializeComponent();
         }
-
-        
     }
 }
