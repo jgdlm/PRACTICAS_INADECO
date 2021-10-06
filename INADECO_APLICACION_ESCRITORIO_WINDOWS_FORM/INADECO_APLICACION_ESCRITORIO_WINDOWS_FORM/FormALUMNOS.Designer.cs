@@ -60,8 +60,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelNOMBRE = new System.Windows.Forms.Label();
             this.textPRIMER_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelPRIMER_APELLIDO = new System.Windows.Forms.Label();
-            this.textID_ALUMNO = new System.Windows.Forms.TextBox();
-            this.labelID_ALUMNO = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxALUMNOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSALUMNOS)).BeginInit();
@@ -99,8 +97,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxALUMNOS.Controls.Add(this.labelNOMBRE);
             this.groupBoxALUMNOS.Controls.Add(this.textPRIMER_APELLIDO);
             this.groupBoxALUMNOS.Controls.Add(this.labelPRIMER_APELLIDO);
-            this.groupBoxALUMNOS.Controls.Add(this.textID_ALUMNO);
-            this.groupBoxALUMNOS.Controls.Add(this.labelID_ALUMNO);
             this.groupBoxALUMNOS.ForeColor = System.Drawing.Color.Navy;
             this.groupBoxALUMNOS.Location = new System.Drawing.Point(12, 144);
             this.groupBoxALUMNOS.Name = "groupBoxALUMNOS";
@@ -304,7 +300,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // textDNIALUMNO
             // 
-            this.textDNIALUMNO.Location = new System.Drawing.Point(1053, 72);
+            this.textDNIALUMNO.Location = new System.Drawing.Point(107, 34);
             this.textDNIALUMNO.Name = "textDNIALUMNO";
             this.textDNIALUMNO.Size = new System.Drawing.Size(161, 20);
             this.textDNIALUMNO.TabIndex = 9;
@@ -313,7 +309,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.labelDNIALUMNO.AutoSize = true;
             this.labelDNIALUMNO.ForeColor = System.Drawing.Color.Navy;
-            this.labelDNIALUMNO.Location = new System.Drawing.Point(962, 79);
+            this.labelDNIALUMNO.Location = new System.Drawing.Point(16, 37);
             this.labelDNIALUMNO.Name = "labelDNIALUMNO";
             this.labelDNIALUMNO.Size = new System.Drawing.Size(85, 13);
             this.labelDNIALUMNO.TabIndex = 8;
@@ -369,24 +365,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelPRIMER_APELLIDO.Size = new System.Drawing.Size(119, 13);
             this.labelPRIMER_APELLIDO.TabIndex = 2;
             this.labelPRIMER_APELLIDO.Text = "PRIMER APELLIDO";
-            // 
-            // textID_ALUMNO
-            // 
-            this.textID_ALUMNO.Enabled = false;
-            this.textID_ALUMNO.Location = new System.Drawing.Point(101, 30);
-            this.textID_ALUMNO.Name = "textID_ALUMNO";
-            this.textID_ALUMNO.Size = new System.Drawing.Size(201, 20);
-            this.textID_ALUMNO.TabIndex = 1;
-            // 
-            // labelID_ALUMNO
-            // 
-            this.labelID_ALUMNO.AutoSize = true;
-            this.labelID_ALUMNO.ForeColor = System.Drawing.Color.Navy;
-            this.labelID_ALUMNO.Location = new System.Drawing.Point(16, 33);
-            this.labelID_ALUMNO.Name = "labelID_ALUMNO";
-            this.labelID_ALUMNO.Size = new System.Drawing.Size(79, 13);
-            this.labelID_ALUMNO.TabIndex = 0;
-            this.labelID_ALUMNO.Text = "ID_ALUMNO";
             // 
             // pictureBox1
             // 
@@ -453,7 +431,5 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelNOMBRE;
         private System.Windows.Forms.TextBox textPRIMER_APELLIDO;
         private System.Windows.Forms.Label labelPRIMER_APELLIDO;
-        private System.Windows.Forms.TextBox textID_ALUMNO;
-        private System.Windows.Forms.Label labelID_ALUMNO;
     }
 }
