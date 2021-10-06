@@ -38,6 +38,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pROFESORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cURSOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CARGARTODOSDATOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +80,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.aLUMNOSToolStripMenuItem,
             this.pROFESORESToolStripMenuItem,
             this.cURSOSToolStripMenuItem,
-            this.aULASToolStripMenuItem});
+            this.aULASToolStripMenuItem,
+            this.CARGARTODOSDATOSToolStripMenuItem});
             this.abrirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.abrirToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
@@ -90,7 +92,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             this.aLUMNOSToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
             this.aLUMNOSToolStripMenuItem.Name = "aLUMNOSToolStripMenuItem";
-            this.aLUMNOSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aLUMNOSToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.aLUMNOSToolStripMenuItem.Text = "ALUMNOS";
             // 
             // pROFESORESToolStripMenuItem
@@ -98,22 +100,29 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pROFESORESToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.pROFESORESToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
             this.pROFESORESToolStripMenuItem.Name = "pROFESORESToolStripMenuItem";
-            this.pROFESORESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pROFESORESToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.pROFESORESToolStripMenuItem.Text = "PROFESORES";
             // 
             // cURSOSToolStripMenuItem
             // 
             this.cURSOSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.cURSOSToolStripMenuItem.Name = "cURSOSToolStripMenuItem";
-            this.cURSOSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cURSOSToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.cURSOSToolStripMenuItem.Text = "CURSOS";
             // 
             // aULASToolStripMenuItem
             // 
             this.aULASToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.aULASToolStripMenuItem.Name = "aULASToolStripMenuItem";
-            this.aULASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aULASToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.aULASToolStripMenuItem.Text = "AULAS";
+            // 
+            // CARGARTODOSDATOSToolStripMenuItem
+            // 
+            this.CARGARTODOSDATOSToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon;
+            this.CARGARTODOSDATOSToolStripMenuItem.Name = "CARGARTODOSDATOSToolStripMenuItem";
+            this.CARGARTODOSDATOSToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.CARGARTODOSDATOSToolStripMenuItem.Text = "CARGARTODOSDATOS";
             // 
             // FrmINICIO
             // 
@@ -148,5 +157,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.ToolStripMenuItem pROFESORESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cURSOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aULASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CARGARTODOSDATOSToolStripMenuItem;
     }
 }

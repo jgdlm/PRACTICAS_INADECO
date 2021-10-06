@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 {
-    public partial class FrmPROFESORES : Form
+    public partial class FrmCARGARTODOSDATOS : Form
     {
-        public FrmPROFESORES()
+        public FrmCARGARTODOSDATOS()
         {
             InitializeComponent();
         }
-
-        
     }
 }

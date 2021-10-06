@@ -52,6 +52,18 @@
     <Compile Include="FormALUMNOS.Designer.cs">
       <DependentUpon>FormALUMNOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAULAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAULAS.Designer.cs">
+      <DependentUpon>FormAULAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCARGARTODOSDATOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCARGARTODOSDATOS.Designer.cs">
+      <DependentUpon>FormCARGARTODOSDATOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCURSOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormALUMNOS.resx">
       <DependentUpon>FormALUMNOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAULAS.resx">
+      <DependentUpon>FormAULAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCARGARTODOSDATOS.resx">
+      <DependentUpon>FormCARGARTODOSDATOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCURSOS.resx">
       <DependentUpon>FormCURSOS.cs</DependentUpon>
@@ -110,6 +128,12 @@
   <ItemGroup>
     <Content Include="LOGOS INADECO\INADECO 2.jpg" />
     <Content Include="LOGOS INADECO\Inadeco.jpg" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\DIAGRAMA DE RELACIONES INADECO_GESTION.jpg" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\script BASE DE DATOS SQL INADECO_GESTION.sql" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\TABLA ALUMNOS.jpg" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\TABLA AULAS.jpg" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\TABLA CURSOS.jpg" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\TABLA PROFESORES.jpg" />
     <None Include="Resources\INADECO 22.jpg" />
     <None Include="Resources\INADECO 21.jpg" />
     <None Include="Resources\INADECO 2.jpg" />

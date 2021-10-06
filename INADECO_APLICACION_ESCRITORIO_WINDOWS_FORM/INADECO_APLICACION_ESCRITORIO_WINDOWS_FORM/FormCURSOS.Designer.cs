@@ -30,7 +30,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCURSOS));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxCURSOS = new System.Windows.Forms.GroupBox();
             this.textIDAULA = new System.Windows.Forms.TextBox();
             this.textDNIPROFESOR = new System.Windows.Forms.TextBox();
@@ -57,20 +56,11 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelFECHAINICIO = new System.Windows.Forms.Label();
             this.textID_ALUMNO = new System.Windows.Forms.TextBox();
             this.labelID_CURSO = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxCURSOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSCURSOS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties.Resources.INADECO_22;
-            this.pictureBox1.Location = new System.Drawing.Point(491, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(401, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // groupBoxCURSOS
             // 
@@ -334,10 +324,21 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelID_CURSO.TabIndex = 0;
             this.labelID_CURSO.Text = "ID_CURSO";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties.Resources.INADECO_22;
+            this.pictureBox1.Location = new System.Drawing.Point(491, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(401, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmCURSOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.groupBoxCURSOS);
@@ -347,10 +348,10 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCURSOS";
             this.Text = "CURSOS";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxCURSOS.ResumeLayout(false);
             this.groupBoxCURSOS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSCURSOS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
