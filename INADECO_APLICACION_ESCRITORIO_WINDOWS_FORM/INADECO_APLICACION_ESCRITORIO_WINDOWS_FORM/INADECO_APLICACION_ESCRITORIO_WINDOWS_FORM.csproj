@@ -126,7 +126,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="LOGOS INADECO\FONDO MDI INADECO .jpg" />
     <Content Include="LOGOS INADECO\INADECO 2.jpg" />
+    <None Include="LOGOS INADECO\INADECO MDI.jpg" />
+    <None Include="LOGOS INADECO\INADECO FONDO GRANDE MDI.jpg" />
     <Content Include="LOGOS INADECO\Inadeco.jpg" />
     <Content Include="script BASE DE DATOS SQL INADECO_GESTION\DIAGRAMA DE RELACIONES INADECO_GESTION.jpg" />
     <Content Include="script BASE DE DATOS SQL INADECO_GESTION\script BASE DE DATOS SQL INADECO_GESTION.sql" />

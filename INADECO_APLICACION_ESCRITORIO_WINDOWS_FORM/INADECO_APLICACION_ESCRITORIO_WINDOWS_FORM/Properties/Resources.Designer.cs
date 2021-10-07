@@ -63,6 +63,16 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FONDO_MDI_INADECO_ {
+            get {
+                object obj = ResourceManager.GetObject("FONDO MDI INADECO ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inadeco {
             get {
                 object obj = ResourceManager.GetObject("Inadeco", resourceCulture);
@@ -96,6 +106,36 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties {
         internal static System.Drawing.Bitmap INADECO_22 {
             get {
                 object obj = ResourceManager.GetObject("INADECO 22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap INADECO_23 {
+            get {
+                object obj = ResourceManager.GetObject("INADECO 23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap INADECO_FONDO_GRANDE_MDI {
+            get {
+                object obj = ResourceManager.GetObject("INADECO FONDO GRANDE MDI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap INADECO_MDI {
+            get {
+                object obj = ResourceManager.GetObject("INADECO MDI", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

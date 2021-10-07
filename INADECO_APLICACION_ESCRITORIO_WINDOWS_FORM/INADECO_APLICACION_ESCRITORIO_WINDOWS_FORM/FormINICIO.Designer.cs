@@ -30,7 +30,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmINICIO));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,19 +38,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.cURSOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CARGARTODOSDATOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties.Resources.INADECO_22;
-            this.pictureBox1.Location = new System.Drawing.Point(446, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(401, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -94,6 +82,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.aLUMNOSToolStripMenuItem.Name = "aLUMNOSToolStripMenuItem";
             this.aLUMNOSToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.aLUMNOSToolStripMenuItem.Text = "ALUMNOS";
+            this.aLUMNOSToolStripMenuItem.Click += new System.EventHandler(this.aLUMNOSToolStripMenuItem_Click);
             // 
             // pROFESORESToolStripMenuItem
             // 
@@ -102,6 +91,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pROFESORESToolStripMenuItem.Name = "pROFESORESToolStripMenuItem";
             this.pROFESORESToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.pROFESORESToolStripMenuItem.Text = "PROFESORES";
+            this.pROFESORESToolStripMenuItem.Click += new System.EventHandler(this.pROFESORESToolStripMenuItem_Click);
             // 
             // cURSOSToolStripMenuItem
             // 
@@ -109,6 +99,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.cURSOSToolStripMenuItem.Name = "cURSOSToolStripMenuItem";
             this.cURSOSToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.cURSOSToolStripMenuItem.Text = "CURSOS";
+            this.cURSOSToolStripMenuItem.Click += new System.EventHandler(this.cURSOSToolStripMenuItem_Click);
             // 
             // aULASToolStripMenuItem
             // 
@@ -116,6 +107,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.aULASToolStripMenuItem.Name = "aULASToolStripMenuItem";
             this.aULASToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.aULASToolStripMenuItem.Text = "AULAS";
+            this.aULASToolStripMenuItem.Click += new System.EventHandler(this.aULASToolStripMenuItem_Click);
             // 
             // CARGARTODOSDATOSToolStripMenuItem
             // 
@@ -123,14 +115,15 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.CARGARTODOSDATOSToolStripMenuItem.Name = "CARGARTODOSDATOSToolStripMenuItem";
             this.CARGARTODOSDATOSToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.CARGARTODOSDATOSToolStripMenuItem.Text = "CARGARTODOSDATOS";
+            this.CARGARTODOSDATOSToolStripMenuItem.Click += new System.EventHandler(this.CARGARTODOSDATOSToolStripMenuItem_Click);
             // 
             // FrmINICIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.Properties.Resources.INADECO_MDI;
             this.ClientSize = new System.Drawing.Size(1131, 749);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.Navy;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -139,7 +132,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.Name = "FrmINICIO";
             this.Text = "INADECO GESTION (MENU PRINCIPAL)";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -148,8 +140,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
