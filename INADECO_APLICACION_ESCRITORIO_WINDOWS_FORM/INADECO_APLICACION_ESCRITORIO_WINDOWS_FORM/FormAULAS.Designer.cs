@@ -32,6 +32,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAULAS));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxAULAS = new System.Windows.Forms.GroupBox();
+            this.textNUMEROTOTALAULAS = new System.Windows.Forms.TextBox();
+            this.labelNUMEROTOTALAULAS = new System.Windows.Forms.Label();
             this.textIDAULA = new System.Windows.Forms.TextBox();
             this.labelID_AULA = new System.Windows.Forms.Label();
             this.labelTABLADATOSAULAS = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnAULA = new System.Windows.Forms.Button();
             this.textNOMBREAULA = new System.Windows.Forms.TextBox();
             this.labelNOMBREAULA = new System.Windows.Forms.Label();
-            this.textNUMEROTOTALAULAS = new System.Windows.Forms.TextBox();
-            this.labelNUMEROTOTALAULAS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxAULAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSAULAS)).BeginInit();
@@ -80,6 +80,26 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxAULAS.TabIndex = 6;
             this.groupBoxAULAS.TabStop = false;
             this.groupBoxAULAS.Text = "AULAS";
+            // 
+            // textNUMEROTOTALAULAS
+            // 
+            this.textNUMEROTOTALAULAS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNUMEROTOTALAULAS.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALAULAS.Location = new System.Drawing.Point(389, 177);
+            this.textNUMEROTOTALAULAS.Name = "textNUMEROTOTALAULAS";
+            this.textNUMEROTOTALAULAS.Size = new System.Drawing.Size(182, 24);
+            this.textNUMEROTOTALAULAS.TabIndex = 40;
+            this.textNUMEROTOTALAULAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelNUMEROTOTALAULAS
+            // 
+            this.labelNUMEROTOTALAULAS.AutoSize = true;
+            this.labelNUMEROTOTALAULAS.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALAULAS.Location = new System.Drawing.Point(200, 184);
+            this.labelNUMEROTOTALAULAS.Name = "labelNUMEROTOTALAULAS";
+            this.labelNUMEROTOTALAULAS.Size = new System.Drawing.Size(174, 13);
+            this.labelNUMEROTOTALAULAS.TabIndex = 39;
+            this.labelNUMEROTOTALAULAS.Text = "NUMERO TOTAL DE AULAS:";
             // 
             // textIDAULA
             // 
@@ -127,6 +147,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnREFRESCARCAMPOSALUMNO.TabIndex = 28;
             this.btnREFRESCARCAMPOSALUMNO.Text = "RESET (REFRESCAR CAMPOS)";
             this.btnREFRESCARCAMPOSALUMNO.UseVisualStyleBackColor = false;
+            this.btnREFRESCARCAMPOSALUMNO.Click += new System.EventHandler(this.btnREFRESCARCAMPOSALUMNO_Click);
             // 
             // btnMODIFICAAULA
             // 
@@ -138,6 +159,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnMODIFICAAULA.TabIndex = 24;
             this.btnMODIFICAAULA.Text = "MODIFICAR DATOS AULA";
             this.btnMODIFICAAULA.UseVisualStyleBackColor = false;
+            this.btnMODIFICAAULA.Click += new System.EventHandler(this.btnMODIFICAAULA_Click);
             // 
             // btnBAJAAULA
             // 
@@ -149,6 +171,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnBAJAAULA.TabIndex = 23;
             this.btnBAJAAULA.Text = "DAR BAJA AULA";
             this.btnBAJAAULA.UseVisualStyleBackColor = false;
+            this.btnBAJAAULA.Click += new System.EventHandler(this.btnBAJAAULA_Click);
             // 
             // btnAULA
             // 
@@ -160,6 +183,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnAULA.TabIndex = 22;
             this.btnAULA.Text = "DAR ALTA AULA";
             this.btnAULA.UseVisualStyleBackColor = false;
+            this.btnAULA.Click += new System.EventHandler(this.btnAULA_Click);
             // 
             // textNOMBREAULA
             // 
@@ -178,26 +202,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelNOMBREAULA.TabIndex = 4;
             this.labelNOMBREAULA.Text = "NOMBRE AULA";
             // 
-            // textNUMEROTOTALAULAS
-            // 
-            this.textNUMEROTOTALAULAS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNUMEROTOTALAULAS.ForeColor = System.Drawing.Color.Red;
-            this.textNUMEROTOTALAULAS.Location = new System.Drawing.Point(389, 177);
-            this.textNUMEROTOTALAULAS.Name = "textNUMEROTOTALAULAS";
-            this.textNUMEROTOTALAULAS.Size = new System.Drawing.Size(182, 24);
-            this.textNUMEROTOTALAULAS.TabIndex = 40;
-            this.textNUMEROTOTALAULAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelNUMEROTOTALAULAS
-            // 
-            this.labelNUMEROTOTALAULAS.AutoSize = true;
-            this.labelNUMEROTOTALAULAS.ForeColor = System.Drawing.Color.Navy;
-            this.labelNUMEROTOTALAULAS.Location = new System.Drawing.Point(200, 184);
-            this.labelNUMEROTOTALAULAS.Name = "labelNUMEROTOTALAULAS";
-            this.labelNUMEROTOTALAULAS.Size = new System.Drawing.Size(174, 13);
-            this.labelNUMEROTOTALAULAS.TabIndex = 39;
-            this.labelNUMEROTOTALAULAS.Text = "NUMERO TOTAL DE AULAS:";
-            // 
             // FrmAULAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -212,6 +216,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAULAS";
             this.Text = "AULAS";
+            this.Load += new System.EventHandler(this.FrmAULAS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxAULAS.ResumeLayout(false);
             this.groupBoxAULAS.PerformLayout();

@@ -30,6 +30,13 @@
       <Association Name="PROFESORES_CURSOS" Member="CURSOS" ThisKey="DNI_PROFESOR" OtherKey="DNI_PROFESOR" Type="CURSOS" />
     </Type>
   </Table>
+  <Table Name="dbo.AULAS" Member="AULAS">
+    <Type Name="AULAS">
+      <Column Name="ID_AULA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NOMBRE_AULA" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="AULAS_CURSOS" Member="CURSOS" ThisKey="ID_AULA" OtherKey="ID_AULA" Type="CURSOS" />
+    </Type>
+  </Table>
   <Table Name="dbo.CURSOS" Member="CURSOS">
     <Type Name="CURSOS">
       <Column Name="ID_CURSO" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -41,15 +48,8 @@
       <Column Name="DNI_PROFESOR" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
       <Column Name="ID_AULA" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="ALUMNOS_CURSOS" Member="ALUMNOS" ThisKey="DNI_ALUMNO" OtherKey="DNI_ALUMNO" Type="ALUMNOS" IsForeignKey="true" DeleteRule="CASCADE" />
-      <Association Name="PROFESORES_CURSOS" Member="PROFESORES" ThisKey="DNI_PROFESOR" OtherKey="DNI_PROFESOR" Type="PROFESORES" IsForeignKey="true" DeleteRule="CASCADE" />
       <Association Name="AULAS_CURSOS" Member="AULAS" ThisKey="ID_AULA" OtherKey="ID_AULA" Type="AULAS" IsForeignKey="true" DeleteRule="CASCADE" />
-    </Type>
-  </Table>
-  <Table Name="dbo.AULAS" Member="AULAS">
-    <Type Name="AULAS">
-      <Column Name="ID_AULA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="NOMBRE_AULA" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Association Name="AULAS_CURSOS" Member="CURSOS" ThisKey="ID_AULA" OtherKey="ID_AULA" Type="CURSOS" />
+      <Association Name="PROFESORES_CURSOS" Member="PROFESORES" ThisKey="DNI_PROFESOR" OtherKey="DNI_PROFESOR" Type="PROFESORES" IsForeignKey="true" DeleteRule="CASCADE" />
     </Type>
   </Table>
 </Database>

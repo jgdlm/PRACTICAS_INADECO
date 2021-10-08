@@ -88,6 +88,11 @@
     <Compile Include="FormPROFESORES.Designer.cs">
       <DependentUpon>FormPROFESORES.cs</DependentUpon>
     </Compile>
+    <Compile Include="INADECO_GESTIONDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INADECO_GESTIONDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormALUMNOS.resx">
@@ -125,6 +130,17 @@
     </None>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="INADECO_GESTIONDataSet.xsc">
+      <DependentUpon>INADECO_GESTIONDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="INADECO_GESTIONDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INADECO_GESTIONDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INADECO_GESTIONDataSet.xss">
+      <DependentUpon>INADECO_GESTIONDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -36,12 +36,12 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
     partial void InsertPROFESORES(PROFESORES instance);
     partial void UpdatePROFESORES(PROFESORES instance);
     partial void DeletePROFESORES(PROFESORES instance);
-    partial void InsertCURSOS(CURSOS instance);
-    partial void UpdateCURSOS(CURSOS instance);
-    partial void DeleteCURSOS(CURSOS instance);
     partial void InsertAULAS(AULAS instance);
     partial void UpdateAULAS(AULAS instance);
     partial void DeleteAULAS(AULAS instance);
+    partial void InsertCURSOS(CURSOS instance);
+    partial void UpdateCURSOS(CURSOS instance);
+    partial void DeleteCURSOS(CURSOS instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -90,19 +90,19 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 			}
 		}
 		
-		public System.Data.Linq.Table<CURSOS> CURSOS
-		{
-			get
-			{
-				return this.GetTable<CURSOS>();
-			}
-		}
-		
 		public System.Data.Linq.Table<AULAS> AULAS
 		{
 			get
 			{
 				return this.GetTable<AULAS>();
+			}
+		}
+		
+		public System.Data.Linq.Table<CURSOS> CURSOS
+		{
+			get
+			{
+				return this.GetTable<CURSOS>();
 			}
 		}
 	}
@@ -719,6 +719,120 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AULAS")]
+	public partial class AULAS : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID_AULA;
+		
+		private string _NOMBRE_AULA;
+		
+		private EntitySet<CURSOS> _CURSOS;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnID_AULAChanging(int value);
+    partial void OnID_AULAChanged();
+    partial void OnNOMBRE_AULAChanging(string value);
+    partial void OnNOMBRE_AULAChanged();
+    #endregion
+		
+		public AULAS()
+		{
+			this._CURSOS = new EntitySet<CURSOS>(new Action<CURSOS>(this.attach_CURSOS), new Action<CURSOS>(this.detach_CURSOS));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_AULA", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int ID_AULA
+		{
+			get
+			{
+				return this._ID_AULA;
+			}
+			set
+			{
+				if ((this._ID_AULA != value))
+				{
+					this.OnID_AULAChanging(value);
+					this.SendPropertyChanging();
+					this._ID_AULA = value;
+					this.SendPropertyChanged("ID_AULA");
+					this.OnID_AULAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE_AULA", DbType="NVarChar(10)")]
+		public string NOMBRE_AULA
+		{
+			get
+			{
+				return this._NOMBRE_AULA;
+			}
+			set
+			{
+				if ((this._NOMBRE_AULA != value))
+				{
+					this.OnNOMBRE_AULAChanging(value);
+					this.SendPropertyChanging();
+					this._NOMBRE_AULA = value;
+					this.SendPropertyChanged("NOMBRE_AULA");
+					this.OnNOMBRE_AULAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="AULAS_CURSOS", Storage="_CURSOS", ThisKey="ID_AULA", OtherKey="ID_AULA")]
+		public EntitySet<CURSOS> CURSOS
+		{
+			get
+			{
+				return this._CURSOS;
+			}
+			set
+			{
+				this._CURSOS.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_CURSOS(CURSOS entity)
+		{
+			this.SendPropertyChanging();
+			entity.AULAS = this;
+		}
+		
+		private void detach_CURSOS(CURSOS entity)
+		{
+			this.SendPropertyChanging();
+			entity.AULAS = null;
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CURSOS")]
 	public partial class CURSOS : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -743,9 +857,9 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 		
 		private EntityRef<ALUMNOS> _ALUMNOS;
 		
-		private EntityRef<PROFESORES> _PROFESORES;
-		
 		private EntityRef<AULAS> _AULAS;
+		
+		private EntityRef<PROFESORES> _PROFESORES;
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
@@ -772,8 +886,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 		public CURSOS()
 		{
 			this._ALUMNOS = default(EntityRef<ALUMNOS>);
-			this._PROFESORES = default(EntityRef<PROFESORES>);
 			this._AULAS = default(EntityRef<AULAS>);
+			this._PROFESORES = default(EntityRef<PROFESORES>);
 			OnCreated();
 		}
 		
@@ -983,40 +1097,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PROFESORES_CURSOS", Storage="_PROFESORES", ThisKey="DNI_PROFESOR", OtherKey="DNI_PROFESOR", IsForeignKey=true, DeleteRule="CASCADE")]
-		public PROFESORES PROFESORES
-		{
-			get
-			{
-				return this._PROFESORES.Entity;
-			}
-			set
-			{
-				PROFESORES previousValue = this._PROFESORES.Entity;
-				if (((previousValue != value) 
-							|| (this._PROFESORES.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._PROFESORES.Entity = null;
-						previousValue.CURSOS.Remove(this);
-					}
-					this._PROFESORES.Entity = value;
-					if ((value != null))
-					{
-						value.CURSOS.Add(this);
-						this._DNI_PROFESOR = value.DNI_PROFESOR;
-					}
-					else
-					{
-						this._DNI_PROFESOR = default(string);
-					}
-					this.SendPropertyChanged("PROFESORES");
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="AULAS_CURSOS", Storage="_AULAS", ThisKey="ID_AULA", OtherKey="ID_AULA", IsForeignKey=true, DeleteRule="CASCADE")]
 		public AULAS AULAS
 		{
@@ -1051,105 +1131,37 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 			}
 		}
 		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AULAS")]
-	public partial class AULAS : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ID_AULA;
-		
-		private string _NOMBRE_AULA;
-		
-		private EntitySet<CURSOS> _CURSOS;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnID_AULAChanging(int value);
-    partial void OnID_AULAChanged();
-    partial void OnNOMBRE_AULAChanging(string value);
-    partial void OnNOMBRE_AULAChanged();
-    #endregion
-		
-		public AULAS()
-		{
-			this._CURSOS = new EntitySet<CURSOS>(new Action<CURSOS>(this.attach_CURSOS), new Action<CURSOS>(this.detach_CURSOS));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_AULA", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int ID_AULA
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PROFESORES_CURSOS", Storage="_PROFESORES", ThisKey="DNI_PROFESOR", OtherKey="DNI_PROFESOR", IsForeignKey=true, DeleteRule="CASCADE")]
+		public PROFESORES PROFESORES
 		{
 			get
 			{
-				return this._ID_AULA;
+				return this._PROFESORES.Entity;
 			}
 			set
 			{
-				if ((this._ID_AULA != value))
+				PROFESORES previousValue = this._PROFESORES.Entity;
+				if (((previousValue != value) 
+							|| (this._PROFESORES.HasLoadedOrAssignedValue == false)))
 				{
-					this.OnID_AULAChanging(value);
 					this.SendPropertyChanging();
-					this._ID_AULA = value;
-					this.SendPropertyChanged("ID_AULA");
-					this.OnID_AULAChanged();
+					if ((previousValue != null))
+					{
+						this._PROFESORES.Entity = null;
+						previousValue.CURSOS.Remove(this);
+					}
+					this._PROFESORES.Entity = value;
+					if ((value != null))
+					{
+						value.CURSOS.Add(this);
+						this._DNI_PROFESOR = value.DNI_PROFESOR;
+					}
+					else
+					{
+						this._DNI_PROFESOR = default(string);
+					}
+					this.SendPropertyChanged("PROFESORES");
 				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE_AULA", DbType="NVarChar(10)")]
-		public string NOMBRE_AULA
-		{
-			get
-			{
-				return this._NOMBRE_AULA;
-			}
-			set
-			{
-				if ((this._NOMBRE_AULA != value))
-				{
-					this.OnNOMBRE_AULAChanging(value);
-					this.SendPropertyChanging();
-					this._NOMBRE_AULA = value;
-					this.SendPropertyChanged("NOMBRE_AULA");
-					this.OnNOMBRE_AULAChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="AULAS_CURSOS", Storage="_CURSOS", ThisKey="ID_AULA", OtherKey="ID_AULA")]
-		public EntitySet<CURSOS> CURSOS
-		{
-			get
-			{
-				return this._CURSOS;
-			}
-			set
-			{
-				this._CURSOS.Assign(value);
 			}
 		}
 		
@@ -1171,18 +1183,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_CURSOS(CURSOS entity)
-		{
-			this.SendPropertyChanging();
-			entity.AULAS = this;
-		}
-		
-		private void detach_CURSOS(CURSOS entity)
-		{
-			this.SendPropertyChanging();
-			entity.AULAS = null;
 		}
 	}
 }
