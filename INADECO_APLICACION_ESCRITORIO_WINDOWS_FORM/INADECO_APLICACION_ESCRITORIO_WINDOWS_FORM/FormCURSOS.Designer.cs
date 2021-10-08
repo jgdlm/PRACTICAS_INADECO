@@ -57,6 +57,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.textID_ALUMNO = new System.Windows.Forms.TextBox();
             this.labelID_CURSO = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textNUMEROTOTALCURSOS = new System.Windows.Forms.TextBox();
+            this.labelNUMEROTOTALCURSOS = new System.Windows.Forms.Label();
             this.groupBoxCURSOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSCURSOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +66,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // groupBoxCURSOS
             // 
+            this.groupBoxCURSOS.Controls.Add(this.textNUMEROTOTALCURSOS);
+            this.groupBoxCURSOS.Controls.Add(this.labelNUMEROTOTALCURSOS);
             this.groupBoxCURSOS.Controls.Add(this.textIDAULA);
             this.groupBoxCURSOS.Controls.Add(this.textDNIPROFESOR);
             this.groupBoxCURSOS.Controls.Add(this.labelID_AULA);
@@ -334,6 +338,24 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // textNUMEROTOTALCURSOS
+            // 
+            this.textNUMEROTOTALCURSOS.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALCURSOS.Location = new System.Drawing.Point(449, 260);
+            this.textNUMEROTOTALCURSOS.Name = "textNUMEROTOTALCURSOS";
+            this.textNUMEROTOTALCURSOS.Size = new System.Drawing.Size(182, 20);
+            this.textNUMEROTOTALCURSOS.TabIndex = 38;
+            // 
+            // labelNUMEROTOTALCURSOS
+            // 
+            this.labelNUMEROTOTALCURSOS.AutoSize = true;
+            this.labelNUMEROTOTALCURSOS.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALCURSOS.Location = new System.Drawing.Point(262, 266);
+            this.labelNUMEROTOTALCURSOS.Name = "labelNUMEROTOTALCURSOS";
+            this.labelNUMEROTOTALCURSOS.Size = new System.Drawing.Size(181, 13);
+            this.labelNUMEROTOTALCURSOS.TabIndex = 37;
+            this.labelNUMEROTOTALCURSOS.Text = "NUMERO TOTAL DE CURSOS";
+            // 
             // FrmCURSOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -385,5 +407,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelID_AULA;
         private System.Windows.Forms.TextBox textIDAULA;
         private System.Windows.Forms.TextBox textDNIPROFESOR;
+        private System.Windows.Forms.TextBox textNUMEROTOTALCURSOS;
+        private System.Windows.Forms.Label labelNUMEROTOTALCURSOS;
     }
 }

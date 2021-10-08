@@ -61,6 +61,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.textPRIMER_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelPRIMER_APELLIDO = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelNUMEROTOTALALUMNOS = new System.Windows.Forms.Label();
+            this.textNUMEROTOTALALUMNOS = new System.Windows.Forms.TextBox();
             this.groupBoxALUMNOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSALUMNOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +70,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // groupBoxALUMNOS
             // 
+            this.groupBoxALUMNOS.Controls.Add(this.textNUMEROTOTALALUMNOS);
+            this.groupBoxALUMNOS.Controls.Add(this.labelNUMEROTOTALALUMNOS);
             this.groupBoxALUMNOS.Controls.Add(this.labelTABLADATOSALUMNOS);
             this.groupBoxALUMNOS.Controls.Add(this.GRIDDATOSALUMNOS);
             this.groupBoxALUMNOS.Controls.Add(this.btnREFRESCARCAMPOSALUMNO);
@@ -134,6 +138,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnREFRESCARCAMPOSALUMNO.TabIndex = 28;
             this.btnREFRESCARCAMPOSALUMNO.Text = "RESET (REFRESCAR CAMPOS)";
             this.btnREFRESCARCAMPOSALUMNO.UseVisualStyleBackColor = false;
+            this.btnREFRESCARCAMPOSALUMNO.Click += new System.EventHandler(this.btnREFRESCARCAMPOSALUMNO_Click);
             // 
             // btnBUSCARALUMNO
             // 
@@ -145,6 +150,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnBUSCARALUMNO.TabIndex = 27;
             this.btnBUSCARALUMNO.Text = "BUSCAR ALUMNO";
             this.btnBUSCARALUMNO.UseVisualStyleBackColor = false;
+            this.btnBUSCARALUMNO.Click += new System.EventHandler(this.btnBUSCARALUMNO_Click);
             // 
             // textBUSCARALUMNO
             // 
@@ -173,6 +179,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnMODIFICAALUMNO.TabIndex = 24;
             this.btnMODIFICAALUMNO.Text = "MODIFICAR DATOS ALUMNO";
             this.btnMODIFICAALUMNO.UseVisualStyleBackColor = false;
+            this.btnMODIFICAALUMNO.Click += new System.EventHandler(this.btnMODIFICAALUMNO_Click);
             // 
             // btnBAJAALUMNO
             // 
@@ -184,6 +191,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnBAJAALUMNO.TabIndex = 23;
             this.btnBAJAALUMNO.Text = "DAR BAJA ALUMNO";
             this.btnBAJAALUMNO.UseVisualStyleBackColor = false;
+            this.btnBAJAALUMNO.Click += new System.EventHandler(this.btnBAJAALUMNO_Click);
             // 
             // btnALTAALUMNO
             // 
@@ -195,6 +203,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnALTAALUMNO.TabIndex = 22;
             this.btnALTAALUMNO.Text = "DAR ALTA ALUMNO";
             this.btnALTAALUMNO.UseVisualStyleBackColor = false;
+            this.btnALTAALUMNO.Click += new System.EventHandler(this.btnALTAALUMNO_Click);
             // 
             // textEMAIL
             // 
@@ -376,6 +385,24 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // labelNUMEROTOTALALUMNOS
+            // 
+            this.labelNUMEROTOTALALUMNOS.AutoSize = true;
+            this.labelNUMEROTOTALALUMNOS.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALALUMNOS.Location = new System.Drawing.Point(262, 264);
+            this.labelNUMEROTOTALALUMNOS.Name = "labelNUMEROTOTALALUMNOS";
+            this.labelNUMEROTOTALALUMNOS.Size = new System.Drawing.Size(194, 13);
+            this.labelNUMEROTOTALALUMNOS.TabIndex = 31;
+            this.labelNUMEROTOTALALUMNOS.Text = "NUMERO TOTAL DE ALUMNOS:";
+            // 
+            // textNUMEROTOTALALUMNOS
+            // 
+            this.textNUMEROTOTALALUMNOS.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALALUMNOS.Location = new System.Drawing.Point(462, 260);
+            this.textNUMEROTOTALALUMNOS.Name = "textNUMEROTOTALALUMNOS";
+            this.textNUMEROTOTALALUMNOS.Size = new System.Drawing.Size(182, 20);
+            this.textNUMEROTOTALALUMNOS.TabIndex = 32;
+            // 
             // FrmALUMNOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -390,6 +417,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmALUMNOS";
             this.Text = "ALUMNOS";
+            this.Load += new System.EventHandler(this.FrmALUMNOS_Load);
             this.groupBoxALUMNOS.ResumeLayout(false);
             this.groupBoxALUMNOS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSALUMNOS)).EndInit();
@@ -431,5 +459,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelNOMBRE;
         private System.Windows.Forms.TextBox textPRIMER_APELLIDO;
         private System.Windows.Forms.Label labelPRIMER_APELLIDO;
+        private System.Windows.Forms.Label labelNUMEROTOTALALUMNOS;
+        private System.Windows.Forms.TextBox textNUMEROTOTALALUMNOS;
     }
 }

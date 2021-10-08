@@ -61,6 +61,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.textPRIMER_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelPRIMER_APELLIDO = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textNUMEROTOTALPROFESORES = new System.Windows.Forms.TextBox();
+            this.labelNUMEROTOTALPROFESORES = new System.Windows.Forms.Label();
             this.groupBoxPROFESORES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSPROFESOR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +70,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // groupBoxPROFESORES
             // 
+            this.groupBoxPROFESORES.Controls.Add(this.textNUMEROTOTALPROFESORES);
+            this.groupBoxPROFESORES.Controls.Add(this.labelNUMEROTOTALPROFESORES);
             this.groupBoxPROFESORES.Controls.Add(this.labelTABLADATOSPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.GRIDDATOSPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.btnREFRESCARCAMPOSALUMNO);
@@ -376,6 +380,24 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // textNUMEROTOTALPROFESORES
+            // 
+            this.textNUMEROTOTALPROFESORES.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALPROFESORES.Location = new System.Drawing.Point(485, 260);
+            this.textNUMEROTOTALPROFESORES.Name = "textNUMEROTOTALPROFESORES";
+            this.textNUMEROTOTALPROFESORES.Size = new System.Drawing.Size(182, 20);
+            this.textNUMEROTOTALPROFESORES.TabIndex = 34;
+            // 
+            // labelNUMEROTOTALPROFESORES
+            // 
+            this.labelNUMEROTOTALPROFESORES.AutoSize = true;
+            this.labelNUMEROTOTALPROFESORES.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALPROFESORES.Location = new System.Drawing.Point(262, 264);
+            this.labelNUMEROTOTALPROFESORES.Name = "labelNUMEROTOTALPROFESORES";
+            this.labelNUMEROTOTALPROFESORES.Size = new System.Drawing.Size(217, 13);
+            this.labelNUMEROTOTALPROFESORES.TabIndex = 33;
+            this.labelNUMEROTOTALPROFESORES.Text = "NUMERO TOTAL DE PROFESORES:";
+            // 
             // FrmPROFESORES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -431,5 +453,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelNOMBRE;
         private System.Windows.Forms.TextBox textPRIMER_APELLIDO;
         private System.Windows.Forms.Label labelPRIMER_APELLIDO;
+        private System.Windows.Forms.TextBox textNUMEROTOTALPROFESORES;
+        private System.Windows.Forms.Label labelNUMEROTOTALPROFESORES;
     }
 }
