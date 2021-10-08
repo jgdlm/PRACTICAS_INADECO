@@ -31,6 +31,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmALUMNOS));
             this.groupBoxALUMNOS = new System.Windows.Forms.GroupBox();
+            this.textNUMEROTOTALALUMNOS = new System.Windows.Forms.TextBox();
+            this.labelNUMEROTOTALALUMNOS = new System.Windows.Forms.Label();
             this.labelTABLADATOSALUMNOS = new System.Windows.Forms.Label();
             this.GRIDDATOSALUMNOS = new System.Windows.Forms.DataGridView();
             this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
@@ -61,8 +63,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.textPRIMER_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelPRIMER_APELLIDO = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelNUMEROTOTALALUMNOS = new System.Windows.Forms.Label();
-            this.textNUMEROTOTALALUMNOS = new System.Windows.Forms.TextBox();
             this.groupBoxALUMNOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSALUMNOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,6 +109,26 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxALUMNOS.TabStop = false;
             this.groupBoxALUMNOS.Text = "ALUMNOS";
             // 
+            // textNUMEROTOTALALUMNOS
+            // 
+            this.textNUMEROTOTALALUMNOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNUMEROTOTALALUMNOS.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALALUMNOS.Location = new System.Drawing.Point(462, 260);
+            this.textNUMEROTOTALALUMNOS.Name = "textNUMEROTOTALALUMNOS";
+            this.textNUMEROTOTALALUMNOS.Size = new System.Drawing.Size(182, 24);
+            this.textNUMEROTOTALALUMNOS.TabIndex = 32;
+            this.textNUMEROTOTALALUMNOS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelNUMEROTOTALALUMNOS
+            // 
+            this.labelNUMEROTOTALALUMNOS.AutoSize = true;
+            this.labelNUMEROTOTALALUMNOS.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALALUMNOS.Location = new System.Drawing.Point(262, 264);
+            this.labelNUMEROTOTALALUMNOS.Name = "labelNUMEROTOTALALUMNOS";
+            this.labelNUMEROTOTALALUMNOS.Size = new System.Drawing.Size(194, 13);
+            this.labelNUMEROTOTALALUMNOS.TabIndex = 31;
+            this.labelNUMEROTOTALALUMNOS.Text = "NUMERO TOTAL DE ALUMNOS:";
+            // 
             // labelTABLADATOSALUMNOS
             // 
             this.labelTABLADATOSALUMNOS.AutoSize = true;
@@ -123,7 +143,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // GRIDDATOSALUMNOS
             // 
             this.GRIDDATOSALUMNOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDDATOSALUMNOS.Location = new System.Drawing.Point(19, 283);
+            this.GRIDDATOSALUMNOS.Location = new System.Drawing.Point(19, 297);
             this.GRIDDATOSALUMNOS.Name = "GRIDDATOSALUMNOS";
             this.GRIDDATOSALUMNOS.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSALUMNOS.TabIndex = 29;
@@ -384,24 +404,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // labelNUMEROTOTALALUMNOS
-            // 
-            this.labelNUMEROTOTALALUMNOS.AutoSize = true;
-            this.labelNUMEROTOTALALUMNOS.ForeColor = System.Drawing.Color.Navy;
-            this.labelNUMEROTOTALALUMNOS.Location = new System.Drawing.Point(262, 264);
-            this.labelNUMEROTOTALALUMNOS.Name = "labelNUMEROTOTALALUMNOS";
-            this.labelNUMEROTOTALALUMNOS.Size = new System.Drawing.Size(194, 13);
-            this.labelNUMEROTOTALALUMNOS.TabIndex = 31;
-            this.labelNUMEROTOTALALUMNOS.Text = "NUMERO TOTAL DE ALUMNOS:";
-            // 
-            // textNUMEROTOTALALUMNOS
-            // 
-            this.textNUMEROTOTALALUMNOS.ForeColor = System.Drawing.Color.Red;
-            this.textNUMEROTOTALALUMNOS.Location = new System.Drawing.Point(462, 260);
-            this.textNUMEROTOTALALUMNOS.Name = "textNUMEROTOTALALUMNOS";
-            this.textNUMEROTOTALALUMNOS.Size = new System.Drawing.Size(182, 20);
-            this.textNUMEROTOTALALUMNOS.TabIndex = 32;
             // 
             // FrmALUMNOS
             // 

@@ -32,6 +32,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAULAS));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxAULAS = new System.Windows.Forms.GroupBox();
+            this.textIDAULA = new System.Windows.Forms.TextBox();
+            this.labelID_AULA = new System.Windows.Forms.Label();
             this.labelTABLADATOSAULAS = new System.Windows.Forms.Label();
             this.GRIDDATOSAULAS = new System.Windows.Forms.DataGridView();
             this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
@@ -40,8 +42,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnAULA = new System.Windows.Forms.Button();
             this.textNOMBREAULA = new System.Windows.Forms.TextBox();
             this.labelNOMBREAULA = new System.Windows.Forms.Label();
-            this.textIDAULA = new System.Windows.Forms.TextBox();
-            this.labelID_AULA = new System.Windows.Forms.Label();
+            this.textNUMEROTOTALAULAS = new System.Windows.Forms.TextBox();
+            this.labelNUMEROTOTALAULAS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxAULAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSAULAS)).BeginInit();
@@ -59,6 +61,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // 
             // groupBoxAULAS
             // 
+            this.groupBoxAULAS.Controls.Add(this.textNUMEROTOTALAULAS);
+            this.groupBoxAULAS.Controls.Add(this.labelNUMEROTOTALAULAS);
             this.groupBoxAULAS.Controls.Add(this.textIDAULA);
             this.groupBoxAULAS.Controls.Add(this.labelID_AULA);
             this.groupBoxAULAS.Controls.Add(this.labelTABLADATOSAULAS);
@@ -77,6 +81,23 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxAULAS.TabStop = false;
             this.groupBoxAULAS.Text = "AULAS";
             // 
+            // textIDAULA
+            // 
+            this.textIDAULA.Location = new System.Drawing.Point(81, 34);
+            this.textIDAULA.Name = "textIDAULA";
+            this.textIDAULA.Size = new System.Drawing.Size(182, 20);
+            this.textIDAULA.TabIndex = 38;
+            // 
+            // labelID_AULA
+            // 
+            this.labelID_AULA.AutoSize = true;
+            this.labelID_AULA.ForeColor = System.Drawing.Color.Navy;
+            this.labelID_AULA.Location = new System.Drawing.Point(16, 38);
+            this.labelID_AULA.Name = "labelID_AULA";
+            this.labelID_AULA.Size = new System.Drawing.Size(59, 13);
+            this.labelID_AULA.TabIndex = 37;
+            this.labelID_AULA.Text = "ID_AULA";
+            // 
             // labelTABLADATOSAULAS
             // 
             this.labelTABLADATOSAULAS.AutoSize = true;
@@ -91,7 +112,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // GRIDDATOSAULAS
             // 
             this.GRIDDATOSAULAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDDATOSAULAS.Location = new System.Drawing.Point(19, 209);
+            this.GRIDDATOSAULAS.Location = new System.Drawing.Point(19, 223);
             this.GRIDDATOSAULAS.Name = "GRIDDATOSAULAS";
             this.GRIDDATOSAULAS.Size = new System.Drawing.Size(708, 355);
             this.GRIDDATOSAULAS.TabIndex = 29;
@@ -157,22 +178,25 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelNOMBREAULA.TabIndex = 4;
             this.labelNOMBREAULA.Text = "NOMBRE AULA";
             // 
-            // textIDAULA
+            // textNUMEROTOTALAULAS
             // 
-            this.textIDAULA.Location = new System.Drawing.Point(81, 34);
-            this.textIDAULA.Name = "textIDAULA";
-            this.textIDAULA.Size = new System.Drawing.Size(182, 20);
-            this.textIDAULA.TabIndex = 38;
+            this.textNUMEROTOTALAULAS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNUMEROTOTALAULAS.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALAULAS.Location = new System.Drawing.Point(389, 177);
+            this.textNUMEROTOTALAULAS.Name = "textNUMEROTOTALAULAS";
+            this.textNUMEROTOTALAULAS.Size = new System.Drawing.Size(182, 24);
+            this.textNUMEROTOTALAULAS.TabIndex = 40;
+            this.textNUMEROTOTALAULAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelID_AULA
+            // labelNUMEROTOTALAULAS
             // 
-            this.labelID_AULA.AutoSize = true;
-            this.labelID_AULA.ForeColor = System.Drawing.Color.Navy;
-            this.labelID_AULA.Location = new System.Drawing.Point(16, 38);
-            this.labelID_AULA.Name = "labelID_AULA";
-            this.labelID_AULA.Size = new System.Drawing.Size(59, 13);
-            this.labelID_AULA.TabIndex = 37;
-            this.labelID_AULA.Text = "ID_AULA";
+            this.labelNUMEROTOTALAULAS.AutoSize = true;
+            this.labelNUMEROTOTALAULAS.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALAULAS.Location = new System.Drawing.Point(200, 184);
+            this.labelNUMEROTOTALAULAS.Name = "labelNUMEROTOTALAULAS";
+            this.labelNUMEROTOTALAULAS.Size = new System.Drawing.Size(174, 13);
+            this.labelNUMEROTOTALAULAS.TabIndex = 39;
+            this.labelNUMEROTOTALAULAS.Text = "NUMERO TOTAL DE AULAS:";
             // 
             // FrmAULAS
             // 
@@ -210,5 +234,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelNOMBREAULA;
         private System.Windows.Forms.TextBox textIDAULA;
         private System.Windows.Forms.Label labelID_AULA;
+        private System.Windows.Forms.TextBox textNUMEROTOTALAULAS;
+        private System.Windows.Forms.Label labelNUMEROTOTALAULAS;
     }
 }

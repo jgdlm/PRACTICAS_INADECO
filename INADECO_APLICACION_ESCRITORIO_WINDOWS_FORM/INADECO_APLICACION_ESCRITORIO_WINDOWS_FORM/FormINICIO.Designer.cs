@@ -38,13 +38,15 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.cURSOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CARGARTODOSDATOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem});
+            this.archivoToolStripMenuItem,
+            this.desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1131, 28);
@@ -117,6 +119,14 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.CARGARTODOSDATOSToolStripMenuItem.Text = "CARGARTODOSDATOS";
             this.CARGARTODOSDATOSToolStripMenuItem.Click += new System.EventHandler(this.CARGARTODOSDATOSToolStripMenuItem_Click);
             // 
+            // desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem
+            // 
+            this.desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem.Name = "desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem";
+            this.desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem.Size = new System.Drawing.Size(908, 24);
+            this.desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem.Text = "Desarrollada la Aplicación de Escritorio Windonws Form (INADECO GESTION) por Jorg" +
+    "e González De La Miar para:  Copyright 2021, ©INADECO ";
+            // 
             // FrmINICIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,5 +158,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.ToolStripMenuItem cURSOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aULASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CARGARTODOSDATOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desarrolladaLaAplicaciónPorJorgeGonzalezDeLaMiarToolStripMenuItem;
     }
 }

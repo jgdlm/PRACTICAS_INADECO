@@ -17,9 +17,10 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             InitializeComponent();
         }
 
+        //CREAMOS EL DATACLASSES1DATACONTEXT DE LA BASE DE DATOS INADECO_GESTION
         DataClasses1DataContext BaseDatosInadecoGestion = new DataClasses1DataContext();
 
-        //METODO CARGAR EL GRID DE DATOS ALUMNOS CON LOS DATOS ALUMNOS DE LA BASE DE DATOS INADECO_GESTION SQL
+        //METODO CARGAR EL GRID DE DATOS ALUMNOS CON LOS DATOS DE ALUMNOS DE LA BASE DE DATOS INADECO_GESTION SQL
         private void FrmALUMNOS_Load(object sender, EventArgs e)
         {
             cargarGridAlumnos();
@@ -84,7 +85,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
                 BaseDatosInadecoGestion.ALUMNOS.InsertOnSubmit(MiAlumno);
                 BaseDatosInadecoGestion.SubmitChanges();
                 cargarGridAlumnos();
-                MessageBox.Show("EL ALUMNO " +  textNOMBRE.Text  +  textPRIMER_APELLIDO.Text +  textSEGUNDO_APELLIDO.Text  + " HA SIDO DADO DE ALTA CORRECTAMENTE");
+                MessageBox.Show("EL ALUMNO " +  textNOMBRE.Text  + " " + textPRIMER_APELLIDO.Text + " " + textSEGUNDO_APELLIDO.Text  + " HA SIDO DADO DE ALTA CORRECTAMENTE");
                 reset();
 
             }
@@ -170,6 +171,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
                 GRIDDATOSALUMNOS.DataSource = Buscar;
                 int numero = Buscar.Count();
                 textNUMEROTOTALALUMNOS.Text = numero.ToString();
+
             }
             catch
             {

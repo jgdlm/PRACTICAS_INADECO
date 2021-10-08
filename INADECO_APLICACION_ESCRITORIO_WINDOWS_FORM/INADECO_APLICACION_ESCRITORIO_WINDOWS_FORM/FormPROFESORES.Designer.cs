@@ -31,6 +31,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPROFESORES));
             this.groupBoxPROFESORES = new System.Windows.Forms.GroupBox();
+            this.textNUMEROTOTALPROFESORES = new System.Windows.Forms.TextBox();
+            this.labelNUMEROTOTALPROFESORES = new System.Windows.Forms.Label();
             this.labelTABLADATOSPROFESOR = new System.Windows.Forms.Label();
             this.GRIDDATOSPROFESOR = new System.Windows.Forms.DataGridView();
             this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
@@ -54,15 +56,13 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelDIRECCION = new System.Windows.Forms.Label();
             this.textDNIPROFESOR = new System.Windows.Forms.TextBox();
             this.labelDNIPROFESOR = new System.Windows.Forms.Label();
-            this.textSEGUNDOAPELLIDO = new System.Windows.Forms.TextBox();
+            this.textSEGUNDO_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelSEGUNDO_APELLIDO = new System.Windows.Forms.Label();
             this.textNOMBRE = new System.Windows.Forms.TextBox();
             this.labelNOMBRE = new System.Windows.Forms.Label();
             this.textPRIMER_APELLIDO = new System.Windows.Forms.TextBox();
             this.labelPRIMER_APELLIDO = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textNUMEROTOTALPROFESORES = new System.Windows.Forms.TextBox();
-            this.labelNUMEROTOTALPROFESORES = new System.Windows.Forms.Label();
             this.groupBoxPROFESORES.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSPROFESOR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,7 +95,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxPROFESORES.Controls.Add(this.labelDIRECCION);
             this.groupBoxPROFESORES.Controls.Add(this.textDNIPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.labelDNIPROFESOR);
-            this.groupBoxPROFESORES.Controls.Add(this.textSEGUNDOAPELLIDO);
+            this.groupBoxPROFESORES.Controls.Add(this.textSEGUNDO_APELLIDO);
             this.groupBoxPROFESORES.Controls.Add(this.labelSEGUNDO_APELLIDO);
             this.groupBoxPROFESORES.Controls.Add(this.textNOMBRE);
             this.groupBoxPROFESORES.Controls.Add(this.labelNOMBRE);
@@ -108,6 +108,26 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxPROFESORES.TabIndex = 4;
             this.groupBoxPROFESORES.TabStop = false;
             this.groupBoxPROFESORES.Text = "PROFESORES";
+            // 
+            // textNUMEROTOTALPROFESORES
+            // 
+            this.textNUMEROTOTALPROFESORES.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNUMEROTOTALPROFESORES.ForeColor = System.Drawing.Color.Red;
+            this.textNUMEROTOTALPROFESORES.Location = new System.Drawing.Point(485, 260);
+            this.textNUMEROTOTALPROFESORES.Name = "textNUMEROTOTALPROFESORES";
+            this.textNUMEROTOTALPROFESORES.Size = new System.Drawing.Size(182, 24);
+            this.textNUMEROTOTALPROFESORES.TabIndex = 34;
+            this.textNUMEROTOTALPROFESORES.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelNUMEROTOTALPROFESORES
+            // 
+            this.labelNUMEROTOTALPROFESORES.AutoSize = true;
+            this.labelNUMEROTOTALPROFESORES.ForeColor = System.Drawing.Color.Navy;
+            this.labelNUMEROTOTALPROFESORES.Location = new System.Drawing.Point(262, 264);
+            this.labelNUMEROTOTALPROFESORES.Name = "labelNUMEROTOTALPROFESORES";
+            this.labelNUMEROTOTALPROFESORES.Size = new System.Drawing.Size(217, 13);
+            this.labelNUMEROTOTALPROFESORES.TabIndex = 33;
+            this.labelNUMEROTOTALPROFESORES.Text = "NUMERO TOTAL DE PROFESORES:";
             // 
             // labelTABLADATOSPROFESOR
             // 
@@ -123,7 +143,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             // GRIDDATOSPROFESOR
             // 
             this.GRIDDATOSPROFESOR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRIDDATOSPROFESOR.Location = new System.Drawing.Point(19, 283);
+            this.GRIDDATOSPROFESOR.Location = new System.Drawing.Point(19, 297);
             this.GRIDDATOSPROFESOR.Name = "GRIDDATOSPROFESOR";
             this.GRIDDATOSPROFESOR.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSPROFESOR.TabIndex = 29;
@@ -138,6 +158,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnREFRESCARCAMPOSALUMNO.TabIndex = 28;
             this.btnREFRESCARCAMPOSALUMNO.Text = "RESET (REFRESCAR CAMPOS)";
             this.btnREFRESCARCAMPOSALUMNO.UseVisualStyleBackColor = false;
+            this.btnREFRESCARCAMPOSALUMNO.Click += new System.EventHandler(this.btnREFRESCARCAMPOSALUMNO_Click);
             // 
             // btnBUSCARPROFESOR
             // 
@@ -149,6 +170,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnBUSCARPROFESOR.TabIndex = 27;
             this.btnBUSCARPROFESOR.Text = "BUSCAR PROFESOR";
             this.btnBUSCARPROFESOR.UseVisualStyleBackColor = false;
+            this.btnBUSCARPROFESOR.Click += new System.EventHandler(this.btnBUSCARPROFESOR_Click);
             // 
             // textBUSCARPROFESOR
             // 
@@ -177,6 +199,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnMODIFICAPROFESOR.TabIndex = 24;
             this.btnMODIFICAPROFESOR.Text = "MODIFICAR DATOS PROFESOR";
             this.btnMODIFICAPROFESOR.UseVisualStyleBackColor = false;
+            this.btnMODIFICAPROFESOR.Click += new System.EventHandler(this.btnMODIFICAPROFESOR_Click);
             // 
             // btnBAJAPROFESOR
             // 
@@ -188,6 +211,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnBAJAPROFESOR.TabIndex = 23;
             this.btnBAJAPROFESOR.Text = "DAR BAJA PROFESOR";
             this.btnBAJAPROFESOR.UseVisualStyleBackColor = false;
+            this.btnBAJAPROFESOR.Click += new System.EventHandler(this.btnBAJAPROFESOR_Click);
             // 
             // btnALTAPROFESOR
             // 
@@ -199,6 +223,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.btnALTAPROFESOR.TabIndex = 22;
             this.btnALTAPROFESOR.Text = "DAR ALTA PROFESOR";
             this.btnALTAPROFESOR.UseVisualStyleBackColor = false;
+            this.btnALTAPROFESOR.Click += new System.EventHandler(this.btnALTAPROFESOR_Click);
             // 
             // textEMAIL
             // 
@@ -319,12 +344,12 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelDNIPROFESOR.TabIndex = 8;
             this.labelDNIPROFESOR.Text = "DNI PROFESOR";
             // 
-            // textSEGUNDOAPELLIDO
+            // textSEGUNDO_APELLIDO
             // 
-            this.textSEGUNDOAPELLIDO.Location = new System.Drawing.Point(766, 72);
-            this.textSEGUNDOAPELLIDO.Name = "textSEGUNDOAPELLIDO";
-            this.textSEGUNDOAPELLIDO.Size = new System.Drawing.Size(177, 20);
-            this.textSEGUNDOAPELLIDO.TabIndex = 7;
+            this.textSEGUNDO_APELLIDO.Location = new System.Drawing.Point(766, 72);
+            this.textSEGUNDO_APELLIDO.Name = "textSEGUNDO_APELLIDO";
+            this.textSEGUNDO_APELLIDO.Size = new System.Drawing.Size(177, 20);
+            this.textSEGUNDO_APELLIDO.TabIndex = 7;
             // 
             // labelSEGUNDO_APELLIDO
             // 
@@ -380,24 +405,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // textNUMEROTOTALPROFESORES
-            // 
-            this.textNUMEROTOTALPROFESORES.ForeColor = System.Drawing.Color.Red;
-            this.textNUMEROTOTALPROFESORES.Location = new System.Drawing.Point(485, 260);
-            this.textNUMEROTOTALPROFESORES.Name = "textNUMEROTOTALPROFESORES";
-            this.textNUMEROTOTALPROFESORES.Size = new System.Drawing.Size(182, 20);
-            this.textNUMEROTOTALPROFESORES.TabIndex = 34;
-            // 
-            // labelNUMEROTOTALPROFESORES
-            // 
-            this.labelNUMEROTOTALPROFESORES.AutoSize = true;
-            this.labelNUMEROTOTALPROFESORES.ForeColor = System.Drawing.Color.Navy;
-            this.labelNUMEROTOTALPROFESORES.Location = new System.Drawing.Point(262, 264);
-            this.labelNUMEROTOTALPROFESORES.Name = "labelNUMEROTOTALPROFESORES";
-            this.labelNUMEROTOTALPROFESORES.Size = new System.Drawing.Size(217, 13);
-            this.labelNUMEROTOTALPROFESORES.TabIndex = 33;
-            this.labelNUMEROTOTALPROFESORES.Text = "NUMERO TOTAL DE PROFESORES:";
-            // 
             // FrmPROFESORES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -412,6 +419,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPROFESORES";
             this.Text = "PROFESORES";
+            this.Load += new System.EventHandler(this.FrmPROFESORES_Load);
             this.groupBoxPROFESORES.ResumeLayout(false);
             this.groupBoxPROFESORES.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDDATOSPROFESOR)).EndInit();
@@ -447,7 +455,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.Label labelDIRECCION;
         private System.Windows.Forms.TextBox textDNIPROFESOR;
         private System.Windows.Forms.Label labelDNIPROFESOR;
-        private System.Windows.Forms.TextBox textSEGUNDOAPELLIDO;
+        private System.Windows.Forms.TextBox textSEGUNDO_APELLIDO;
         private System.Windows.Forms.Label labelSEGUNDO_APELLIDO;
         private System.Windows.Forms.TextBox textNOMBRE;
         private System.Windows.Forms.Label labelNOMBRE;
