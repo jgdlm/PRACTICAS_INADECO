@@ -29,19 +29,14 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCARGARTODOSDATOS));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxCURSOS = new System.Windows.Forms.GroupBox();
             this.labelTABLATODOSDATOS = new System.Windows.Forms.Label();
             this.GRIDTODOSDATOS = new System.Windows.Forms.DataGridView();
-            this.iNADECOGESTIONDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iNADECO_GESTIONDataSet = new INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM.INADECO_GESTIONDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxCURSOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDTODOSDATOS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iNADECOGESTIONDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iNADECO_GESTIONDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -85,16 +80,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.GRIDTODOSDATOS.Size = new System.Drawing.Size(1309, 524);
             this.GRIDTODOSDATOS.TabIndex = 29;
             // 
-            // iNADECOGESTIONDataSetBindingSource
-            // 
-            this.iNADECOGESTIONDataSetBindingSource.DataSource = this.iNADECO_GESTIONDataSet;
-            this.iNADECOGESTIONDataSetBindingSource.Position = 0;
-            // 
-            // iNADECO_GESTIONDataSet
-            // 
-            this.iNADECO_GESTIONDataSet.DataSetName = "INADECO_GESTIONDataSet";
-            this.iNADECO_GESTIONDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // FrmCARGARTODOSDATOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -114,8 +99,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxCURSOS.ResumeLayout(false);
             this.groupBoxCURSOS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRIDTODOSDATOS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iNADECOGESTIONDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iNADECO_GESTIONDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -126,7 +109,5 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.GroupBox groupBoxCURSOS;
         private System.Windows.Forms.Label labelTABLATODOSDATOS;
         private System.Windows.Forms.DataGridView GRIDTODOSDATOS;
-        private System.Windows.Forms.BindingSource iNADECOGESTIONDataSetBindingSource;
-        private INADECO_GESTIONDataSet iNADECO_GESTIONDataSet;
     }
 }

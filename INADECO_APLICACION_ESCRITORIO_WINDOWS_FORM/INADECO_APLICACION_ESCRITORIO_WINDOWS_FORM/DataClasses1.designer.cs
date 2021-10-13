@@ -105,6 +105,13 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 				return this.GetTable<CURSOS>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.cargarGridTodosDatos")]
+		public ISingleResult<cargarGridTodosDatosResult> cargarGridTodosDatos()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<cargarGridTodosDatosResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ALUMNOS")]
@@ -1182,6 +1189,554 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	public partial class cargarGridTodosDatosResult
+	{
+		
+		private string _ID_CURSO;
+		
+		private string _NOMBRE_CURSO;
+		
+		private System.Nullable<System.DateTime> _FECHA_INICIO;
+		
+		private System.Nullable<System.DateTime> _FECHA_FINALIZACION;
+		
+		private string _HORARIO;
+		
+		private string _DNI_ALUMNO;
+		
+		private string _DNI_PROFESOR;
+		
+		private System.Nullable<int> _ID_AULA;
+		
+		private string _DNI_ALUMNO1;
+		
+		private string _NOMBRE;
+		
+		private string _PRIMER_APELLIDO;
+		
+		private string _SEGUNDO_APELLIDO;
+		
+		private string _DIRECCION;
+		
+		private string _CIUDAD;
+		
+		private System.Nullable<int> _CODIGO_POSTAL;
+		
+		private string _PROVINCIA;
+		
+		private string _TELEFONO;
+		
+		private string _EMAIL;
+		
+		private string _DNI_PROFESOR1;
+		
+		private string _NOMBRE1;
+		
+		private string _PRIMER_APELLIDO1;
+		
+		private string _SEGUNDO_APELLIDO1;
+		
+		private string _DIRECCION1;
+		
+		private string _CIUDAD1;
+		
+		private System.Nullable<int> _CODIGO_POSTAL1;
+		
+		private string _PROVINCIA1;
+		
+		private string _TELEFONO1;
+		
+		private string _EMAIL1;
+		
+		private int _ID_AULA1;
+		
+		private string _NOMBRE_AULA;
+		
+		public cargarGridTodosDatosResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_CURSO", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string ID_CURSO
+		{
+			get
+			{
+				return this._ID_CURSO;
+			}
+			set
+			{
+				if ((this._ID_CURSO != value))
+				{
+					this._ID_CURSO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE_CURSO", DbType="NVarChar(100)")]
+		public string NOMBRE_CURSO
+		{
+			get
+			{
+				return this._NOMBRE_CURSO;
+			}
+			set
+			{
+				if ((this._NOMBRE_CURSO != value))
+				{
+					this._NOMBRE_CURSO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_INICIO", DbType="Date")]
+		public System.Nullable<System.DateTime> FECHA_INICIO
+		{
+			get
+			{
+				return this._FECHA_INICIO;
+			}
+			set
+			{
+				if ((this._FECHA_INICIO != value))
+				{
+					this._FECHA_INICIO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_FINALIZACION", DbType="Date")]
+		public System.Nullable<System.DateTime> FECHA_FINALIZACION
+		{
+			get
+			{
+				return this._FECHA_FINALIZACION;
+			}
+			set
+			{
+				if ((this._FECHA_FINALIZACION != value))
+				{
+					this._FECHA_FINALIZACION = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HORARIO", DbType="NVarChar(100)")]
+		public string HORARIO
+		{
+			get
+			{
+				return this._HORARIO;
+			}
+			set
+			{
+				if ((this._HORARIO != value))
+				{
+					this._HORARIO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_ALUMNO", DbType="NVarChar(9)")]
+		public string DNI_ALUMNO
+		{
+			get
+			{
+				return this._DNI_ALUMNO;
+			}
+			set
+			{
+				if ((this._DNI_ALUMNO != value))
+				{
+					this._DNI_ALUMNO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_PROFESOR", DbType="NVarChar(9)")]
+		public string DNI_PROFESOR
+		{
+			get
+			{
+				return this._DNI_PROFESOR;
+			}
+			set
+			{
+				if ((this._DNI_PROFESOR != value))
+				{
+					this._DNI_PROFESOR = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_AULA", DbType="Int")]
+		public System.Nullable<int> ID_AULA
+		{
+			get
+			{
+				return this._ID_AULA;
+			}
+			set
+			{
+				if ((this._ID_AULA != value))
+				{
+					this._ID_AULA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_ALUMNO1", DbType="NVarChar(9) NOT NULL", CanBeNull=false)]
+		public string DNI_ALUMNO1
+		{
+			get
+			{
+				return this._DNI_ALUMNO1;
+			}
+			set
+			{
+				if ((this._DNI_ALUMNO1 != value))
+				{
+					this._DNI_ALUMNO1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE", DbType="NVarChar(100)")]
+		public string NOMBRE
+		{
+			get
+			{
+				return this._NOMBRE;
+			}
+			set
+			{
+				if ((this._NOMBRE != value))
+				{
+					this._NOMBRE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PRIMER_APELLIDO", DbType="NVarChar(100)")]
+		public string PRIMER_APELLIDO
+		{
+			get
+			{
+				return this._PRIMER_APELLIDO;
+			}
+			set
+			{
+				if ((this._PRIMER_APELLIDO != value))
+				{
+					this._PRIMER_APELLIDO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SEGUNDO_APELLIDO", DbType="NVarChar(100)")]
+		public string SEGUNDO_APELLIDO
+		{
+			get
+			{
+				return this._SEGUNDO_APELLIDO;
+			}
+			set
+			{
+				if ((this._SEGUNDO_APELLIDO != value))
+				{
+					this._SEGUNDO_APELLIDO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DIRECCION", DbType="NVarChar(100)")]
+		public string DIRECCION
+		{
+			get
+			{
+				return this._DIRECCION;
+			}
+			set
+			{
+				if ((this._DIRECCION != value))
+				{
+					this._DIRECCION = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CIUDAD", DbType="NVarChar(100)")]
+		public string CIUDAD
+		{
+			get
+			{
+				return this._CIUDAD;
+			}
+			set
+			{
+				if ((this._CIUDAD != value))
+				{
+					this._CIUDAD = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CODIGO_POSTAL", DbType="Int")]
+		public System.Nullable<int> CODIGO_POSTAL
+		{
+			get
+			{
+				return this._CODIGO_POSTAL;
+			}
+			set
+			{
+				if ((this._CODIGO_POSTAL != value))
+				{
+					this._CODIGO_POSTAL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PROVINCIA", DbType="NVarChar(100)")]
+		public string PROVINCIA
+		{
+			get
+			{
+				return this._PROVINCIA;
+			}
+			set
+			{
+				if ((this._PROVINCIA != value))
+				{
+					this._PROVINCIA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TELEFONO", DbType="NVarChar(10)")]
+		public string TELEFONO
+		{
+			get
+			{
+				return this._TELEFONO;
+			}
+			set
+			{
+				if ((this._TELEFONO != value))
+				{
+					this._TELEFONO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL", DbType="NVarChar(100)")]
+		public string EMAIL
+		{
+			get
+			{
+				return this._EMAIL;
+			}
+			set
+			{
+				if ((this._EMAIL != value))
+				{
+					this._EMAIL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_PROFESOR1", DbType="NVarChar(9) NOT NULL", CanBeNull=false)]
+		public string DNI_PROFESOR1
+		{
+			get
+			{
+				return this._DNI_PROFESOR1;
+			}
+			set
+			{
+				if ((this._DNI_PROFESOR1 != value))
+				{
+					this._DNI_PROFESOR1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE1", DbType="NVarChar(100)")]
+		public string NOMBRE1
+		{
+			get
+			{
+				return this._NOMBRE1;
+			}
+			set
+			{
+				if ((this._NOMBRE1 != value))
+				{
+					this._NOMBRE1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PRIMER_APELLIDO1", DbType="NVarChar(100)")]
+		public string PRIMER_APELLIDO1
+		{
+			get
+			{
+				return this._PRIMER_APELLIDO1;
+			}
+			set
+			{
+				if ((this._PRIMER_APELLIDO1 != value))
+				{
+					this._PRIMER_APELLIDO1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SEGUNDO_APELLIDO1", DbType="NVarChar(100)")]
+		public string SEGUNDO_APELLIDO1
+		{
+			get
+			{
+				return this._SEGUNDO_APELLIDO1;
+			}
+			set
+			{
+				if ((this._SEGUNDO_APELLIDO1 != value))
+				{
+					this._SEGUNDO_APELLIDO1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DIRECCION1", DbType="NVarChar(100)")]
+		public string DIRECCION1
+		{
+			get
+			{
+				return this._DIRECCION1;
+			}
+			set
+			{
+				if ((this._DIRECCION1 != value))
+				{
+					this._DIRECCION1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CIUDAD1", DbType="NVarChar(100)")]
+		public string CIUDAD1
+		{
+			get
+			{
+				return this._CIUDAD1;
+			}
+			set
+			{
+				if ((this._CIUDAD1 != value))
+				{
+					this._CIUDAD1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CODIGO_POSTAL1", DbType="Int")]
+		public System.Nullable<int> CODIGO_POSTAL1
+		{
+			get
+			{
+				return this._CODIGO_POSTAL1;
+			}
+			set
+			{
+				if ((this._CODIGO_POSTAL1 != value))
+				{
+					this._CODIGO_POSTAL1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PROVINCIA1", DbType="NVarChar(100)")]
+		public string PROVINCIA1
+		{
+			get
+			{
+				return this._PROVINCIA1;
+			}
+			set
+			{
+				if ((this._PROVINCIA1 != value))
+				{
+					this._PROVINCIA1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TELEFONO1", DbType="NVarChar(10)")]
+		public string TELEFONO1
+		{
+			get
+			{
+				return this._TELEFONO1;
+			}
+			set
+			{
+				if ((this._TELEFONO1 != value))
+				{
+					this._TELEFONO1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL1", DbType="NVarChar(100)")]
+		public string EMAIL1
+		{
+			get
+			{
+				return this._EMAIL1;
+			}
+			set
+			{
+				if ((this._EMAIL1 != value))
+				{
+					this._EMAIL1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_AULA1", DbType="Int NOT NULL")]
+		public int ID_AULA1
+		{
+			get
+			{
+				return this._ID_AULA1;
+			}
+			set
+			{
+				if ((this._ID_AULA1 != value))
+				{
+					this._ID_AULA1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE_AULA", DbType="NVarChar(10)")]
+		public string NOMBRE_AULA
+		{
+			get
+			{
+				return this._NOMBRE_AULA;
+			}
+			set
+			{
+				if ((this._NOMBRE_AULA != value))
+				{
+					this._NOMBRE_AULA = value;
+				}
 			}
 		}
 	}

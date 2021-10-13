@@ -93,6 +93,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>INADECO_GESTIONDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="INADECO_GESTIONDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INADECO_GESTIONDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormALUMNOS.resx">
@@ -142,6 +147,17 @@
     <None Include="INADECO_GESTIONDataSet.xss">
       <DependentUpon>INADECO_GESTIONDataSet.xsd</DependentUpon>
     </None>
+    <None Include="INADECO_GESTIONDataSet1.xsc">
+      <DependentUpon>INADECO_GESTIONDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="INADECO_GESTIONDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INADECO_GESTIONDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INADECO_GESTIONDataSet1.xss">
+      <DependentUpon>INADECO_GESTIONDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,6 +177,7 @@
     <None Include="LOGOS INADECO\INADECO MDI.jpg" />
     <None Include="LOGOS INADECO\INADECO FONDO GRANDE MDI.jpg" />
     <Content Include="LOGOS INADECO\Inadeco.jpg" />
+    <Content Include="script BASE DE DATOS SQL INADECO_GESTION\cargarGridTodosDatos PROCEDIMIENTO ALMACENADO SP.sql" />
     <Content Include="script BASE DE DATOS SQL INADECO_GESTION\DIAGRAMA DE RELACIONES INADECO_GESTION.jpg" />
     <Content Include="script BASE DE DATOS SQL INADECO_GESTION\script BASE DE DATOS SQL INADECO_GESTION.sql" />
     <Content Include="script BASE DE DATOS SQL INADECO_GESTION\TABLA ALUMNOS.jpg" />
