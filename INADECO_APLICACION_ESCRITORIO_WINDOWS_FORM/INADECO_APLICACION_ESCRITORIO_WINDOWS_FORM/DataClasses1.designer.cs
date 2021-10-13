@@ -112,6 +112,20 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<cargarGridTodosDatosResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CARGARGRIDCURSOS")]
+		public ISingleResult<CARGARGRIDCURSOSResult> CARGARGRIDCURSOS()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<CARGARGRIDCURSOSResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.BuscarCurso")]
+		public ISingleResult<BuscarCursoResult> BuscarCurso([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_CURSO", DbType="NVarChar(50)")] string iD_CURSO)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_CURSO);
+			return ((ISingleResult<BuscarCursoResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ALUMNOS")]
@@ -1736,6 +1750,310 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 				if ((this._NOMBRE_AULA != value))
 				{
 					this._NOMBRE_AULA = value;
+				}
+			}
+		}
+	}
+	
+	public partial class CARGARGRIDCURSOSResult
+	{
+		
+		private string _ID_CURSO;
+		
+		private string _NOMBRE_CURSO;
+		
+		private System.Nullable<System.DateTime> _FECHA_INICIO;
+		
+		private System.Nullable<System.DateTime> _FECHA_FINALIZACION;
+		
+		private string _HORARIO;
+		
+		private string _DNI_ALUMNO;
+		
+		private string _DNI_PROFESOR;
+		
+		private System.Nullable<int> _ID_AULA;
+		
+		public CARGARGRIDCURSOSResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_CURSO", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string ID_CURSO
+		{
+			get
+			{
+				return this._ID_CURSO;
+			}
+			set
+			{
+				if ((this._ID_CURSO != value))
+				{
+					this._ID_CURSO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE_CURSO", DbType="NVarChar(100)")]
+		public string NOMBRE_CURSO
+		{
+			get
+			{
+				return this._NOMBRE_CURSO;
+			}
+			set
+			{
+				if ((this._NOMBRE_CURSO != value))
+				{
+					this._NOMBRE_CURSO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_INICIO", DbType="Date")]
+		public System.Nullable<System.DateTime> FECHA_INICIO
+		{
+			get
+			{
+				return this._FECHA_INICIO;
+			}
+			set
+			{
+				if ((this._FECHA_INICIO != value))
+				{
+					this._FECHA_INICIO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_FINALIZACION", DbType="Date")]
+		public System.Nullable<System.DateTime> FECHA_FINALIZACION
+		{
+			get
+			{
+				return this._FECHA_FINALIZACION;
+			}
+			set
+			{
+				if ((this._FECHA_FINALIZACION != value))
+				{
+					this._FECHA_FINALIZACION = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HORARIO", DbType="NVarChar(100)")]
+		public string HORARIO
+		{
+			get
+			{
+				return this._HORARIO;
+			}
+			set
+			{
+				if ((this._HORARIO != value))
+				{
+					this._HORARIO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_ALUMNO", DbType="NVarChar(9)")]
+		public string DNI_ALUMNO
+		{
+			get
+			{
+				return this._DNI_ALUMNO;
+			}
+			set
+			{
+				if ((this._DNI_ALUMNO != value))
+				{
+					this._DNI_ALUMNO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_PROFESOR", DbType="NVarChar(9)")]
+		public string DNI_PROFESOR
+		{
+			get
+			{
+				return this._DNI_PROFESOR;
+			}
+			set
+			{
+				if ((this._DNI_PROFESOR != value))
+				{
+					this._DNI_PROFESOR = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_AULA", DbType="Int")]
+		public System.Nullable<int> ID_AULA
+		{
+			get
+			{
+				return this._ID_AULA;
+			}
+			set
+			{
+				if ((this._ID_AULA != value))
+				{
+					this._ID_AULA = value;
+				}
+			}
+		}
+	}
+	
+	public partial class BuscarCursoResult
+	{
+		
+		private string _ID_CURSO;
+		
+		private string _NOMBRE_CURSO;
+		
+		private System.Nullable<System.DateTime> _FECHA_INICIO;
+		
+		private System.Nullable<System.DateTime> _FECHA_FINALIZACION;
+		
+		private string _HORARIO;
+		
+		private string _DNI_ALUMNO;
+		
+		private string _DNI_PROFESOR;
+		
+		private System.Nullable<int> _ID_AULA;
+		
+		public BuscarCursoResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_CURSO", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string ID_CURSO
+		{
+			get
+			{
+				return this._ID_CURSO;
+			}
+			set
+			{
+				if ((this._ID_CURSO != value))
+				{
+					this._ID_CURSO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRE_CURSO", DbType="NVarChar(100)")]
+		public string NOMBRE_CURSO
+		{
+			get
+			{
+				return this._NOMBRE_CURSO;
+			}
+			set
+			{
+				if ((this._NOMBRE_CURSO != value))
+				{
+					this._NOMBRE_CURSO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_INICIO", DbType="Date")]
+		public System.Nullable<System.DateTime> FECHA_INICIO
+		{
+			get
+			{
+				return this._FECHA_INICIO;
+			}
+			set
+			{
+				if ((this._FECHA_INICIO != value))
+				{
+					this._FECHA_INICIO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_FINALIZACION", DbType="Date")]
+		public System.Nullable<System.DateTime> FECHA_FINALIZACION
+		{
+			get
+			{
+				return this._FECHA_FINALIZACION;
+			}
+			set
+			{
+				if ((this._FECHA_FINALIZACION != value))
+				{
+					this._FECHA_FINALIZACION = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HORARIO", DbType="NVarChar(100)")]
+		public string HORARIO
+		{
+			get
+			{
+				return this._HORARIO;
+			}
+			set
+			{
+				if ((this._HORARIO != value))
+				{
+					this._HORARIO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_ALUMNO", DbType="NVarChar(9)")]
+		public string DNI_ALUMNO
+		{
+			get
+			{
+				return this._DNI_ALUMNO;
+			}
+			set
+			{
+				if ((this._DNI_ALUMNO != value))
+				{
+					this._DNI_ALUMNO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DNI_PROFESOR", DbType="NVarChar(9)")]
+		public string DNI_PROFESOR
+		{
+			get
+			{
+				return this._DNI_PROFESOR;
+			}
+			set
+			{
+				if ((this._DNI_PROFESOR != value))
+				{
+					this._DNI_PROFESOR = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_AULA", DbType="Int")]
+		public System.Nullable<int> ID_AULA
+		{
+			get
+			{
+				return this._ID_AULA;
+			}
+			set
+			{
+				if ((this._ID_AULA != value))
+				{
+					this._ID_AULA = value;
 				}
 			}
 		}

@@ -29,8 +29,9 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         {
             try
             {
+
                 var CargaGridCursos = from cursos in BaseDatosInadecoGestion.CURSOS select cursos;
-                GRIDDATOSCURSOS.DataSource = CargaGridCursos;
+                GRIDDATOSCURSOS.DataSource = BaseDatosInadecoGestion.CARGARGRIDCURSOS();
                 int numero = CargaGridCursos.Count();
                 textNUMEROTOTALCURSOS.Text = numero.ToString();
             }
@@ -155,10 +156,10 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         {
             try
             {
-                var Buscar = from CURSOS in BaseDatosInadecoGestion.CURSOS where
-                CURSOS.ID_CURSO == textBUSCARCURSO.Text select CURSOS;
-                GRIDDATOSCURSOS.DataSource = Buscar;
-                int numero = Buscar.Count();
+
+
+                GRIDDATOSCURSOS.DataSource= BaseDatosInadecoGestion.BuscarCurso(textBUSCARCURSO.Text);
+                int numero = BaseDatosInadecoGestion.BuscarCurso(textBUSCARCURSO.Text).Count();
                 textNUMEROTOTALCURSOS.Text = numero.ToString();
             }
             catch

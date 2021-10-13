@@ -23,9 +23,8 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         void cargarGridTodosDatos()
          {
              try
-             {
-                 
-                 GRIDTODOSDATOS.DataSource = BaseDatosInadecoGestion.cargarGridTodosDatos();
+             { 
+                GRIDTODOSDATOS.DataSource = BaseDatosInadecoGestion.cargarGridTodosDatos();
              }
              catch
              {
