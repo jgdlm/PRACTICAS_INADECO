@@ -145,6 +145,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.GRIDDATOSPROFESOR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GRIDDATOSPROFESOR.Location = new System.Drawing.Point(19, 297);
             this.GRIDDATOSPROFESOR.Name = "GRIDDATOSPROFESOR";
+            this.GRIDDATOSPROFESOR.ReadOnly = true;
             this.GRIDDATOSPROFESOR.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSPROFESOR.TabIndex = 29;
             // 

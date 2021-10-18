@@ -185,6 +185,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.GRIDDATOSCURSOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GRIDDATOSCURSOS.Location = new System.Drawing.Point(19, 297);
             this.GRIDDATOSCURSOS.Name = "GRIDDATOSCURSOS";
+            this.GRIDDATOSCURSOS.ReadOnly = true;
             this.GRIDDATOSCURSOS.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSCURSOS.TabIndex = 29;
             // 

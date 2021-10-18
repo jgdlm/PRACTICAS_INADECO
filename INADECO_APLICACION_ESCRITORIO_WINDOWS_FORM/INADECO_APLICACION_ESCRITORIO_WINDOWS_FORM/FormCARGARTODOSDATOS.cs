@@ -39,8 +39,6 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 
         }
 
-       
-
-
+        
     }
 }
