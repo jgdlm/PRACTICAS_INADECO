@@ -138,7 +138,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         }
 
         //RESET REFRESCAR (LIMPIAR) TODOS LOS CAMPOS DEL FORMULARIO CURSOS
-        private void btnREFRESCARCAMPOSALUMNO_Click(object sender, EventArgs e)
+        private void btnREFRESCARCAMPOSCURSOS_Click(object sender, EventArgs e)
         {
             textID_CURSO.Text = "";
             textNOMBRECURSO.Text = "";

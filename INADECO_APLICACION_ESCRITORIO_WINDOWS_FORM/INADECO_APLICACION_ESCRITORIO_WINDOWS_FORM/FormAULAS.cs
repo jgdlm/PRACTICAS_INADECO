@@ -116,7 +116,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         }
 
         //RESET REFRESCAR (LIMPIAR) TODOS LOS CAMPOS DEL FORMULARIO AULAS
-        private void btnREFRESCARCAMPOSALUMNO_Click(object sender, EventArgs e)
+        private void btnREFRESCARCAMPOSAULAS_Click(object sender, EventArgs e)
         {
                 textIDAULA.Text = "";
                 textNOMBREAULA.Text = "";

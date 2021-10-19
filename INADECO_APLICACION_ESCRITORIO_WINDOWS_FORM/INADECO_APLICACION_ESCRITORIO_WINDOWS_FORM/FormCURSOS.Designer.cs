@@ -41,7 +41,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.dateTimePickerFECHAINICIO = new System.Windows.Forms.DateTimePicker();
             this.labelTABLADATOSCURSOS = new System.Windows.Forms.Label();
             this.GRIDDATOSCURSOS = new System.Windows.Forms.DataGridView();
-            this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
+            this.btnREFRESCARCAMPOSCURSOS = new System.Windows.Forms.Button();
             this.btnBUSCARCURSO = new System.Windows.Forms.Button();
             this.textBUSCARCURSO = new System.Windows.Forms.TextBox();
             this.labelBUSCARCURSO = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxCURSOS.Controls.Add(this.dateTimePickerFECHAINICIO);
             this.groupBoxCURSOS.Controls.Add(this.labelTABLADATOSCURSOS);
             this.groupBoxCURSOS.Controls.Add(this.GRIDDATOSCURSOS);
-            this.groupBoxCURSOS.Controls.Add(this.btnREFRESCARCAMPOSALUMNO);
+            this.groupBoxCURSOS.Controls.Add(this.btnREFRESCARCAMPOSCURSOS);
             this.groupBoxCURSOS.Controls.Add(this.btnBUSCARCURSO);
             this.groupBoxCURSOS.Controls.Add(this.textBUSCARCURSO);
             this.groupBoxCURSOS.Controls.Add(this.labelBUSCARCURSO);
@@ -189,17 +189,17 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.GRIDDATOSCURSOS.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSCURSOS.TabIndex = 29;
             // 
-            // btnREFRESCARCAMPOSALUMNO
+            // btnREFRESCARCAMPOSCURSOS
             // 
-            this.btnREFRESCARCAMPOSALUMNO.BackColor = System.Drawing.Color.Gray;
-            this.btnREFRESCARCAMPOSALUMNO.ForeColor = System.Drawing.Color.White;
-            this.btnREFRESCARCAMPOSALUMNO.Location = new System.Drawing.Point(410, 201);
-            this.btnREFRESCARCAMPOSALUMNO.Name = "btnREFRESCARCAMPOSALUMNO";
-            this.btnREFRESCARCAMPOSALUMNO.Size = new System.Drawing.Size(144, 40);
-            this.btnREFRESCARCAMPOSALUMNO.TabIndex = 28;
-            this.btnREFRESCARCAMPOSALUMNO.Text = "RESET (REFRESCAR CAMPOS)";
-            this.btnREFRESCARCAMPOSALUMNO.UseVisualStyleBackColor = false;
-            this.btnREFRESCARCAMPOSALUMNO.Click += new System.EventHandler(this.btnREFRESCARCAMPOSALUMNO_Click);
+            this.btnREFRESCARCAMPOSCURSOS.BackColor = System.Drawing.Color.Gray;
+            this.btnREFRESCARCAMPOSCURSOS.ForeColor = System.Drawing.Color.White;
+            this.btnREFRESCARCAMPOSCURSOS.Location = new System.Drawing.Point(410, 201);
+            this.btnREFRESCARCAMPOSCURSOS.Name = "btnREFRESCARCAMPOSCURSOS";
+            this.btnREFRESCARCAMPOSCURSOS.Size = new System.Drawing.Size(144, 40);
+            this.btnREFRESCARCAMPOSCURSOS.TabIndex = 28;
+            this.btnREFRESCARCAMPOSCURSOS.Text = "RESET (REFRESCAR CAMPOS)";
+            this.btnREFRESCARCAMPOSCURSOS.UseVisualStyleBackColor = false;
+            this.btnREFRESCARCAMPOSCURSOS.Click += new System.EventHandler(this.btnREFRESCARCAMPOSCURSOS_Click);
             // 
             // btnBUSCARCURSO
             // 
@@ -393,7 +393,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.GroupBox groupBoxCURSOS;
         private System.Windows.Forms.Label labelTABLADATOSCURSOS;
         private System.Windows.Forms.DataGridView GRIDDATOSCURSOS;
-        private System.Windows.Forms.Button btnREFRESCARCAMPOSALUMNO;
+        private System.Windows.Forms.Button btnREFRESCARCAMPOSCURSOS;
         private System.Windows.Forms.Button btnBUSCARCURSO;
         private System.Windows.Forms.TextBox textBUSCARCURSO;
         private System.Windows.Forms.Label labelBUSCARCURSO;
