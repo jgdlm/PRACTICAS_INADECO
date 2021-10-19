@@ -35,7 +35,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.labelNUMEROTOTALPROFESORES = new System.Windows.Forms.Label();
             this.labelTABLADATOSPROFESOR = new System.Windows.Forms.Label();
             this.GRIDDATOSPROFESOR = new System.Windows.Forms.DataGridView();
-            this.btnREFRESCARCAMPOSALUMNO = new System.Windows.Forms.Button();
+            this.btnREFRESCARCAMPOSPROFESOR = new System.Windows.Forms.Button();
             this.btnBUSCARPROFESOR = new System.Windows.Forms.Button();
             this.textBUSCARPROFESOR = new System.Windows.Forms.TextBox();
             this.labelBUSCARPROFESOR = new System.Windows.Forms.Label();
@@ -74,7 +74,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.groupBoxPROFESORES.Controls.Add(this.labelNUMEROTOTALPROFESORES);
             this.groupBoxPROFESORES.Controls.Add(this.labelTABLADATOSPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.GRIDDATOSPROFESOR);
-            this.groupBoxPROFESORES.Controls.Add(this.btnREFRESCARCAMPOSALUMNO);
+            this.groupBoxPROFESORES.Controls.Add(this.btnREFRESCARCAMPOSPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.btnBUSCARPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.textBUSCARPROFESOR);
             this.groupBoxPROFESORES.Controls.Add(this.labelBUSCARPROFESOR);
@@ -149,17 +149,17 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             this.GRIDDATOSPROFESOR.Size = new System.Drawing.Size(1309, 281);
             this.GRIDDATOSPROFESOR.TabIndex = 29;
             // 
-            // btnREFRESCARCAMPOSALUMNO
+            // btnREFRESCARCAMPOSPROFESOR
             // 
-            this.btnREFRESCARCAMPOSALUMNO.BackColor = System.Drawing.Color.Gray;
-            this.btnREFRESCARCAMPOSALUMNO.ForeColor = System.Drawing.Color.White;
-            this.btnREFRESCARCAMPOSALUMNO.Location = new System.Drawing.Point(410, 201);
-            this.btnREFRESCARCAMPOSALUMNO.Name = "btnREFRESCARCAMPOSALUMNO";
-            this.btnREFRESCARCAMPOSALUMNO.Size = new System.Drawing.Size(144, 40);
-            this.btnREFRESCARCAMPOSALUMNO.TabIndex = 28;
-            this.btnREFRESCARCAMPOSALUMNO.Text = "RESET (REFRESCAR CAMPOS)";
-            this.btnREFRESCARCAMPOSALUMNO.UseVisualStyleBackColor = false;
-            this.btnREFRESCARCAMPOSALUMNO.Click += new System.EventHandler(this.btnREFRESCARCAMPOSALUMNO_Click);
+            this.btnREFRESCARCAMPOSPROFESOR.BackColor = System.Drawing.Color.Gray;
+            this.btnREFRESCARCAMPOSPROFESOR.ForeColor = System.Drawing.Color.White;
+            this.btnREFRESCARCAMPOSPROFESOR.Location = new System.Drawing.Point(410, 201);
+            this.btnREFRESCARCAMPOSPROFESOR.Name = "btnREFRESCARCAMPOSPROFESOR";
+            this.btnREFRESCARCAMPOSPROFESOR.Size = new System.Drawing.Size(144, 40);
+            this.btnREFRESCARCAMPOSPROFESOR.TabIndex = 28;
+            this.btnREFRESCARCAMPOSPROFESOR.Text = "RESET (REFRESCAR CAMPOS)";
+            this.btnREFRESCARCAMPOSPROFESOR.UseVisualStyleBackColor = false;
+            this.btnREFRESCARCAMPOSPROFESOR.Click += new System.EventHandler(this.btnREFRESCARCAMPOSPROFESOR_Click);
             // 
             // btnBUSCARPROFESOR
             // 
@@ -435,7 +435,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         private System.Windows.Forms.GroupBox groupBoxPROFESORES;
         private System.Windows.Forms.Label labelTABLADATOSPROFESOR;
         private System.Windows.Forms.DataGridView GRIDDATOSPROFESOR;
-        private System.Windows.Forms.Button btnREFRESCARCAMPOSALUMNO;
+        private System.Windows.Forms.Button btnREFRESCARCAMPOSPROFESOR;
         private System.Windows.Forms.Button btnBUSCARPROFESOR;
         private System.Windows.Forms.TextBox textBUSCARPROFESOR;
         private System.Windows.Forms.Label labelBUSCARPROFESOR;

@@ -145,7 +145,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
         }
 
         //RESET REFRESCAR (LIMPIAR) TODOS LOS CAMPOS DEL FORMULARIO PROFESORES
-        private void btnREFRESCARCAMPOSALUMNO_Click(object sender, EventArgs e)
+        private void btnREFRESCARCAMPOSPROFESOR_Click(object sender, EventArgs e)
         {
             textDNIPROFESOR.Text = "";
             textNOMBRE.Text = "";
