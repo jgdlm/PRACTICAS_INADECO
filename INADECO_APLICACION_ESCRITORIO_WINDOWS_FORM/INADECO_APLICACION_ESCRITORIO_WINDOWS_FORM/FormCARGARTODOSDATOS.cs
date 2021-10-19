@@ -19,7 +19,16 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
             InitializeComponent();
         }
 
-        //CARGAR EL GRID DE LOS DATOS DE CURSOS Y CUENTA EL NUMERO TOTAL DE CURSOS REGISTRADOS EN EL TEXTNUMEROTOTALCURSOS LOS MUESTRA
+
+        //METODO CARGAR EL GRID DE TODOS LOS DATOS DE LOS FORMS: FormCURSOS, FormALUMNOS, FormPROFESORES, FormAULAS
+        private void FrmCARGARTODOSDATOS_Load(object sender, EventArgs e)
+        {
+            this.cargarGridTodosDatos();
+
+        }
+
+
+        //CARGAR EL GRID DE TODOS LOS DATOS DE LOS FORMS: FormCURSOS, FormALUMNOS, FormPROFESORES, FormAULAS
         void cargarGridTodosDatos()
          {
              try
@@ -33,11 +42,7 @@ namespace INADECO_APLICACION_ESCRITORIO_WINDOWS_FORM
 
          }
 
-        private void FrmCARGARTODOSDATOS_Load(object sender, EventArgs e)
-        {
-            this.cargarGridTodosDatos();
-
-        }
+        
 
         
     }
